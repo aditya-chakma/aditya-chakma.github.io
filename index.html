@@ -8,16 +8,11 @@
     <title>Aditya::Portfolio::Home</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <link rel="stylesheet" href="css/portfolio.css">
 
-    <!-- <script>
-        document.onload = function () {
-            document.getElementById('header').innerHTML('header.html');
-        }
-    </script> -->
-
     <script src="js/portfolio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -28,11 +23,40 @@
     <main class="container-xxl">
 
         <div class="row">
-            <div class="col-lg-10 main-content">
+            <div class="col-12 col-lg-9 main-content">
 
-                <section>
-                    <h3 class="username rounded-pill p-2">Aditya Chakma</h3>
-                </section>
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                        <img id="profile" src="images/Aditya.jpg" alt="Aditya Chakma at sikkim">
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-start">
+                        <section>
+                            <!-- <p class="text-center"><img src="https://media.giphy.com/media/Rjub7AIEIbXT0tzbr3/giphy.gif"
+                                    alt="Hey" style="max-width: 200px;"></p> -->
+                            <!-- <div class="tenor-gif-embed" data-postid="17522450" data-share-method="host"
+                                data-aspect-ratio="1" data-width="100%"><a
+                                    href="https://tenor.com/view/waving-hand-people-joypixels-hi-hello-gif-17522450">Waving
+                                    Hand People Sticker</a>from <a
+                                    href="https://tenor.com/search/waving+hand-stickers">Waving Hand Stickers</a></div>
+                            <script type="text/javascript" async src="https://tenor.com/embed.js"></script> -->
+                            <h3 class="username rounded-pill p-2">Aditya Chakma</h3>
+                            <p>
+                                Hi there <img
+                                    src="https://camo.githubusercontent.com/e8e7b06ecf583bc040eb60e44eb5b8e0ecc5421320a92929ce21522dbc34c891/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966"
+                                    alt="Hi" style="width: 2em;"> </p>
+
+                            <p> My name is <strong>Aditya Chakma</strong>. Currently I am working as a full stack java
+                                Software Engineer at Therap (BD) Ltd. I've compelted my Honors from BUET and
+                                currenyly persuing Masters Degree from BUET. Besides developing I have interest in
+                                Machine Learning, and plan to explore the field. I've done several machine learning
+                                projects and competitions. I am open to any machne learning positions at the moment.
+                                Besides study and developing i love problem solving, traveling, listening to music,
+                                playing video games, reading books and watching movies.
+                            </p>
+                        </section>
+
+                    </div>
+                </div>
 
                 <section class="content" id="education">
                     <h3>Education</h3>
@@ -155,6 +179,37 @@
                     </div>
                 </section>
 
+                <section class="content" id="certifications">
+                    <h3>Certifications</h3>
+                    <hr>
+
+                    <!-- <img class="img-thumbnail certification" src="/images/certifications/Coursera 3V3PLW8DS4BT.jpg"
+                        alt="Neural Networks and Deep Learning"> -->
+
+                    <img id="imageresource" src="/images/certifications/Coursera 3V3PLW8DS4BT.jpg" style="width: 100%;"
+                        class="img-thumbnail certification">
+                </section>
+
+                <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!-- <button type="button" id="cross" class="close" data-dismiss="modal"><span
+                                        aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
+                                <h4 class="modal-title" id="myModalLabel">Certification</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="" id="imagepreview" style="width: 100%;">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="close" class="btn btn-default"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <section class="content" id="language-proficiency">
                     <h3>Language proficiency</h3>
                     <hr>
@@ -178,7 +233,7 @@
                 </section>
             </div>
 
-            <div class="col-lg-2 d-none d-lg-block">
+            <div class="col-lg-3 d-none d-lg-block">
                 <div class="sticky-top table-of-content content">
                     <strong>Table of content</strong>
                     <ul class="no-bullet">
@@ -224,6 +279,10 @@
                         </li>
 
                         <li>
+                            <a href="#certifications">Certifications</a>
+                        </li>
+
+                        <li>
                             <a href="#language-proficiency">Language proficiency</a>
                         </li>
                         <li>
@@ -243,6 +302,28 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
         includeHTML();
+
+        $(function () {
+            var image = document.getElementById('imageresource');
+
+            image.onclick = function () {
+                document.getElementById('imagepreview').setAttribute('src', image.getAttribute('src'));
+                $('#imagemodal').modal('show');
+            };
+
+            var closeButton = document.getElementById('close');
+
+            closeButton.onclick = function () {
+                $('#imagemodal').modal('hide');
+            };
+        });
+
+
+
+        // $(".certifications").on("click", function () {
+        //     // $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+        //     // $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+        // });
     </script>
 
 </body>

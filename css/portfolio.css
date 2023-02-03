@@ -24,6 +24,10 @@ footer {
     border-top: 2px solid black;
 }
 
+nav {
+    background-color: #263159;
+}
+
 nav a {
     color: #263159;
     font-size: 1.2em;
@@ -52,6 +56,15 @@ nav a:hover {
 
 section {
     margin-top: 1em;
+}
+
+footer,
+.email {
+    background-color: #263159;
+    color: white;
+    font-weight: bold;
+
+    font-size: 1.25em;
 }
 
 section h3 {
@@ -90,6 +103,10 @@ section li {
     border-radius: 1em;
 }
 
+.certification {
+    max-width: 200px;
+}
+
 ul.no-bullet {
     list-style-type: none !important;
 }
@@ -106,6 +123,8 @@ ul.no-bullet a {
 
 #navbar-button {
     margin: .25em;
+    border: solid white;
+    color: white;
 }
 
 .title {
@@ -122,6 +141,13 @@ ul.no-bullet a {
 
     background-color: whitesmoke;
     padding: 1em;
+}
+
+#profile {
+    border-radius: 50%;
+
+    width: 100%;
+    max-width: 400px;
 }
 
 @media screen and (min-width:768px) {
