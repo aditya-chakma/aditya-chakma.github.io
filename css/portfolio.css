@@ -97,7 +97,7 @@ section li {
 }
 
 .content {
-    background-color: whitesmoke;
+    background-color: #FFFBF5;
     padding: 1em;
     border: 1px solid #263159;
     border-radius: 1em;
@@ -129,6 +129,7 @@ ul.no-bullet a {
 
 .table-of-content {
     margin-top: 7em;
+    top: 100px;
 }
 
 .details {
@@ -170,6 +171,10 @@ ul.no-bullet a {
 
 #certifications img:hover {
     transform: translateY(-.5em);
+}
+
+.table-of-content a {
+    color: dimgray;
 }
 
 @media screen and (min-width:768px) {
