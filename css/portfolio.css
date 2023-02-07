@@ -63,8 +63,6 @@ footer,
     background-color: #263159;
     color: white;
     font-weight: bold;
-
-    font-size: 1.25em;
 }
 
 section h3 {
@@ -117,7 +115,6 @@ ul.no-bullet a {
 }
 
 .no-bullet a:hover {
-    transform: translateY(-.25em) !important;
     transition: .5s;
     text-decoration: underline;
 }
@@ -129,7 +126,6 @@ ul.no-bullet a {
 
 .table-of-content {
     margin-top: 7em;
-    top: 100px;
 }
 
 .details {
@@ -175,6 +171,12 @@ ul.no-bullet a {
 
 .table-of-content a {
     color: dimgray;
+    text-decoration: none;
+}
+
+.table-of-content a:hover {
+    text-decoration: underline;
+    transition-duration: .5s;
 }
 
 @media screen and (min-width:768px) {
@@ -184,6 +186,13 @@ ul.no-bullet a {
         bottom: 0;
         left: 0;
         z-index: 1030;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .non-stick-lg {
+        position: static;
+        top: auto;
     }
 }
 
