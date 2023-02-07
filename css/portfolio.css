@@ -147,6 +147,7 @@ ul.no-bullet a {
 
     width: 100%;
     max-width: 400px;
+    min-width: 200px;
 }
 
 #modal-image {
@@ -163,6 +164,20 @@ ul.no-bullet a {
 .img-container {
     margin-bottom: 1em;
     max-width: 200px;
+}
+
+.contact img {
+    height: 2em;
+    padding-right: 5px;
+}
+
+.contact a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
 
 #certifications img:hover {
