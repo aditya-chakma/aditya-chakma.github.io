@@ -1,5 +1,6 @@
 body {
     background-color: #BAD7E9;
+    min-width: 350px !important;
 }
 
 main {

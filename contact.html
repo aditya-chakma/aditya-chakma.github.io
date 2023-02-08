@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya::Portfolio::Contact</title>
 
+    <link rel="icon" href="images/aditya_circle.png">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/portfolio.css">
 
@@ -15,7 +17,7 @@
 
 <body>
 
-    <div include="header.html"></div>
+    <div class="sticky-top non-stick-lg" include="header.html"></div>
 
     <main class="container">
         <div class="row">
@@ -108,8 +110,8 @@
             var body = document.getElementById("description");
 
             window.location.href = "mailto:adityachakma199@gmail.com?cc=aditya.chakma@therapservices.net"
-                + "&subject=" + subject.value
-                + "&body=" + body.value + "[user.name=" + userName.value + "]";
+                + "&subject=[contact-portfolio]::" + subject.value
+                + "&body=[user.name=" + userName.value + "]::" + body.value;
         }
     </script>
 
