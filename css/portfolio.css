@@ -176,6 +176,10 @@ a.no-style {
     max-width: 200px;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .contact img {
     height: 2em;
     padding-right: 5px;
