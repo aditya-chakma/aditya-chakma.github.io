@@ -1,200 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aditya::Portfolio::Projects</title>
 
-    <link rel="icon" href="images/aditya_circle.png">
+    <link rel="icon" href="images/aditya_circle.png" />
 
     <script src="js/portfolio.js"></script>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-</head>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="sticky-top non-stick-lg" include="header.html"></div>
 
     <main class="container">
-        <div class="row">
-            <div class="col-12 col-lg-9 main-content">
+      <div class="row">
+        <div class="col-12 col-lg-9 main-content">
+          <section>
+            <div include="username-contacts.html"></div>
+          </section>
+          <hr />
 
-                <section>
-                    <div include="username-contacts.html"></div>
-                </section>
-                <hr>
+          <section class="content text-justify" id="university-projects">
+            <h3>Mentionable Course Projects</h3>
+            <hr />
 
-                <section class="content text-justify" id="university-projects">
-                    <h3>Mentionable Course Projects</h3>
-                    <hr>
+            <ul>
+              <li>
+                <strong id="c">C: </strong>
+                Dx-ball
+                <p class="details">
+                  Using <strong>i-graphics</strong> (C graphics library which
+                  was made as final year project by a previous student) I made
+                  this game. This game had 5 levels and a scoring system. Used
+                  C's multithread for GUI render. The project can be downloaded
+                  from
+                  <a
+                    href="https://drive.google.com/file/d/0B5taQ-dRcWE8LUJrMnFJT2gtbGM/view?usp=share_link&resourcekey=0-STg0lvTbgsRFhgJUI93kqA"
+                  >
+                    here </a
+                  >.
+                </p>
+              </li>
+              <li>
+                <strong id="java">Java: </strong>
+                Blood Bank
+                <p class="details">
+                  In this project I've used
+                  <strong>java FX, Net beans</strong> to make the GUI. Using
+                  this app blood donors are able to create account. Whenever
+                  someone request for blood (user can input amount of bags
+                  needed), all available blood donors will get notificaton
+                  through email. Donors last blood donation time will be updated
+                  accordinglya. When a blood donation is done, and if donors
+                  have donated the amout of bags requested, the case will be
+                  automatically closed. The project can be downloaded from
+                  <a
+                    href="https://drive.google.com/file/d/0B5taQ-dRcWE8bDJLLThFcEdYT2s/view?usp=share_link&resourcekey=0-AQ8pK8IbS0WTAAXV9D6jJg"
+                  >
+                    here
+                  </a>
+                </p>
+              </li>
+              <li>
+                <strong id="database">Database: </strong>
+                Hospital management
+                <p class="details">
+                  Hospital management is a web app. It was a group project. I
+                  and my partner have used
+                  <strong>MySql and php</strong> for development. I've done the
+                  database part and some part of backend. We have list of
+                  doctors and other related information like, number of
+                  available seats visible to the user. Each of these doctors
+                  have a limited number of seats for patients. Users can take
+                  appointment from the doctors and doctors can suggest
+                  prescription. Doctors are able to view previous appointments.
+                </p>
+              </li>
+              <li>
+                <strong id="se1">Software Engineering I: </strong>
+                FPS game
+                <p class="details">
+                  I've used <strong>unreal engine 4.0</strong> and
+                  <strong>blueprint</strong> to develop the game. I've used
+                  unreal engine's AI bots to create the environemtn and game
+                  level.
+                </p>
+              </li>
+              <li>
+                <strong id="se2">Software Engineering II: </strong>
+                Travel Mate (Tour management)
+                <p class="details">
+                  In this project we have build a web app using
+                  <strong>laravel and mySql</strong>. People will be able to
+                  search and book hotels and vehicles. We also included payment
+                  and checkout system. We used machine learning to build a
+                  recommendation system.
+                </p>
+              </li>
 
-                    <ul>
-                        <li>
-                            <strong id="c">C: </strong>
-                            Dx-ball
-                            <p class="details">
-                                Using <strong>i-graphics</strong> (C graphics library which was made as final year
-                                project by a previous student) I made this game. This game had 5 levels and a scoring
-                                system. Used C's multithread for GUI render. The project can be downloaded from
-                                <a
-                                    href="https://drive.google.com/file/d/0B5taQ-dRcWE8LUJrMnFJT2gtbGM/view?usp=share_link&resourcekey=0-STg0lvTbgsRFhgJUI93kqA">
-                                    here
-                                </a>.
-                            </p>
-                        </li>
-                        <li>
-                            <strong id="java">Java: </strong>
-                            Blood Bank
-                            <p class="details">
-                                In this project I've used <strong>java FX, Net beans</strong> to make the GUI. Using
-                                this app blood donors are able to create account. Whenever someone request for blood
-                                (user can input amount of bags needed), all available blood donors will get notificaton
-                                through email. Donors last blood donation time will be updated accordinglya. When a
-                                blood donation is done, and if donors have donated the amout of bags requested, the case
-                                will be automatically closed. The project can be downloaded from
-                                <a
-                                    href="https://drive.google.com/file/d/0B5taQ-dRcWE8bDJLLThFcEdYT2s/view?usp=share_link&resourcekey=0-AQ8pK8IbS0WTAAXV9D6jJg">
-                                    here
-                                </a>
-                            </p>
-                        </li>
-                        <li>
-                            <strong id="database">Database: </strong>
-                            Hospital management
-                            <p class="details">
-                                Hospital management is a web app. It was a group project. I and my partner have used
-                                <strong>MySql and php</strong> for development. I've done the database part and some
-                                part of backend. We have list of doctors and other related information like, number of
-                                available seats visible to the user. Each of these doctors have a limited number of
-                                seats for patients. Users can take appointment from the doctors and doctors can suggest
-                                prescription. Doctors are able to view previous appointments.
-                            </p>
-                        </li>
-                        <li>
-                            <strong id="se1">Software Engineering I: </strong>
-                            FPS game
-                            <p class="details">
-                                I've used <strong>unreal engine 4.0</strong> and <strong>blueprint</strong> to develop
-                                the game. I've used unreal engine's AI bots to create the environemtn and game level.
-                            </p>
-                        </li>
-                        <li>
-                            <strong id="se2">Software Engineering II: </strong>
-                            Travel Mate (Tour management)
-                            <p class="details">
-                                In this project we have build a web app using <strong>laravel and mySql</strong>. People
-                                will be able to search and book hotels and vehicles. We also included payment and
-                                checkout system. We used machine learning to build a recommendation system.
-                        </li>
-                        <li>
-                            <strong id="misc">Miscellaneous: </strong>
-                            ARP cache poisoning, Arithmetic Logical Unit (ALU), <a class="no-style"
-                                href="https://github.com/aditya-chakma/4-bit-pc-proteus">4 bit computer</a>, Remote
-                            Controll Car
-                            using arduino, <a class="no-style"
-                                href="https://github.com/aditya-chakma/LCU-net">Environmental
-                                micro-organism segmentation</a> etc.
-                        </li>
-                    </ul>
-                </section>
+              <li>
+                <strong id="misc">Miscellaneous: </strong>
+                ARP cache poisoning, Arithmetic Logical Unit (ALU),
+                <a
+                  class="no-style"
+                  href="https://github.com/aditya-chakma/4-bit-pc-proteus"
+                  >4 bit computer</a
+                >, Remote Controll Car using arduino,
+                <a
+                  class="no-style"
+                  href="https://github.com/aditya-chakma/LCU-net"
+                  >Environmental micro-organism segmentation</a
+                >
+                etc.
+              </li>
+            </ul>
+          </section>
 
-                <section class="content" id="personal-projects">
-                    <h3>Personal Projects</h3>
-                    <hr>
+          <section class="content" id="personal-projects">
+            <h3>Personal Projects</h3>
+            <hr />
 
-                    <ul>
-                        <li>
-                            <strong id="zombie">Zombie runner</strong>
-                        </li>
+            <ul>
+              <li>
+                <strong id="zombie">Zombie runner</strong>
+              </li>
 
-                        <li>
-                            <strong id="tower">Tower defence</strong>
-                        </li>
+              <li>
+                <strong id="tower">Tower defence</strong>
+              </li>
 
-                        <li>
-                            <strong id="flappy">Flappy bird Desktop</strong>
-                        </li>
+              <li>
+                <strong id="flappy">Flappy bird Desktop</strong>
+              </li>
 
-                        <li>
-                            <strong id="ocr">Chakma Handwritten Characters Recognition and Multipurpose Dataset</strong>
-                        </li>
-                        <li>
-                            <strong id="nlp">Multilingual machine translation for Chakma language</strong>
-                        </li>
-                    </ul>
-                </section>
-
-            </div>
-
-            <div class="col-lg-3 d-none d-lg-block">
-                <div class="sticky-top table-of-content content">
-                    <strong>On this page</strong>
-                    <hr>
-                    <ul class="no-bullet">
-                        <li>
-                            <a href="#university-projects">University Projects</a>
-                            <ul class="no-bullet">
-                                <li>
-                                    <a href="#c">C</a>
-                                </li>
-                                <li>
-                                    <a href="#java">Java</a>
-                                </li>
-                                <li>
-                                    <a href="#database">Database</a>
-                                </li>
-                                <li>
-                                    <a href="#se1">Software Engineering I</a>
-                                </li>
-                                <li>
-                                    <a href="#se2">Software Engineering II</a>
-                                </li>
-                                <li>
-                                    <a href="#misc">Miscellaneous</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#personal-projects">Personal Projects</a>
-                            <ul class="no-bullet">
-                                <li>
-                                    <a href="#zombie">Zombie Runner</a>
-                                </li>
-                                <li>
-                                    <a href="#tower">Tower Defense</a>
-                                </li>
-                                <li>
-                                    <a href="#flappy">Flappy Bird</a>
-                                </li>
-                                <li>
-                                    <a href="#ocr">Chakma Handwritten Characters Recognition and Multipurpose
-                                        Dataset</a>
-                                </li>
-                                <li>
-                                    <a href="#nlp">Multilingual machne translation for Chakma Language</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-
-
-                    <div include="page-navigation.html"></div>
-                </div>
-            </div>
+              <li>
+                <strong id="ocr"
+                  >Chakma Handwritten Characters Recognition and Multipurpose
+                  Dataset</strong
+                >
+              </li>
+              <li>
+                <strong id="nlp"
+                  >Multilingual machine translation for Chakma language</strong
+                >
+              </li>
+            </ul>
+          </section>
         </div>
+
+        <div class="col-lg-3 d-none d-lg-block">
+          <div class="sticky-top table-of-content content">
+            <strong>On this page</strong>
+            <hr />
+            <ul class="no-bullet">
+              <li>
+                <a href="#university-projects">University Projects</a>
+                <ul class="no-bullet">
+                  <li>
+                    <a href="#c">C</a>
+                  </li>
+                  <li>
+                    <a href="#java">Java</a>
+                  </li>
+                  <li>
+                    <a href="#database">Database</a>
+                  </li>
+                  <li>
+                    <a href="#se1">Software Engineering I</a>
+                  </li>
+                  <li>
+                    <a href="#se2">Software Engineering II</a>
+                  </li>
+                  <li>
+                    <a href="#misc">Miscellaneous</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#personal-projects">Personal Projects</a>
+                <ul class="no-bullet">
+                  <li>
+                    <a href="#zombie">Zombie Runner</a>
+                  </li>
+                  <li>
+                    <a href="#tower">Tower Defense</a>
+                  </li>
+                  <li>
+                    <a href="#flappy">Flappy Bird</a>
+                  </li>
+                  <li>
+                    <a href="#ocr"
+                      >Chakma Handwritten Characters Recognition and
+                      Multipurpose Dataset</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#nlp"
+                      >Multilingual machne translation for Chakma Language</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div include="page-navigation.html"></div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <div include="footer.html"></div>
 
     <script src="js/bootstrap.min.js"></script>
     <script>
-        includeHTML();
+      includeHTML();
     </script>
-</body>
-
+  </body>
 </html>

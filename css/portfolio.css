@@ -1,5 +1,19 @@
+@font-face {
+    font-family: "Courier-Prime";
+    src: url("../resources/fonts/courier-prime/CourierPrime-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Permanent-Marker";
+    src: url("../resources/fonts/permanent-marker/PermanentMarker-Regular.ttf");
+}
+
+html * {
+    font-family: "Courier-Prime";
+}
+
 body {
-    background-color: #BAD7E9;
+    background-color: #bad7e9;
     min-width: 350px !important;
 }
 
@@ -33,10 +47,10 @@ nav a {
     color: #263159;
     font-size: 1.2em;
 
-    padding: .25em;
+    padding: 0.25em;
 
     border: solid white 1px;
-    border-radius: .5em;
+    border-radius: 0.5em;
 
     text-align: center;
 
@@ -47,10 +61,10 @@ nav a {
 }
 
 nav a:hover {
-    box-shadow: 0 .25em .25em .25em rgb(196, 193, 188);
+    box-shadow: 0 0.25em 0.25em 0.25em rgb(196, 193, 188);
 
-    transform: translateY(-.25em);
-    transition: .25s;
+    transform: translateY(-0.25em);
+    transition: 0.25s;
 
     background-color: white;
 }
@@ -76,7 +90,6 @@ section .h3 {
     text-decoration: underline;
 }
 
-
 time {
     font-weight: 500;
 }
@@ -96,7 +109,7 @@ section li {
 }
 
 .content {
-    background-color: #FFFBF5;
+    background-color: #fffbf5;
     padding: 1em;
     border: 1px solid #263159;
     border-radius: 1em;
@@ -117,14 +130,13 @@ ul.no-bullet a {
 }
 
 .no-bullet a:hover {
-    transition: .5s;
+    transition: 0.5s;
     text-decoration: underline;
 }
 
 a.no-style {
     color: inherit;
 }
-
 
 .title {
     padding-left: 1.5em;
@@ -147,7 +159,7 @@ a.no-style {
 }
 
 #navbar-button {
-    margin: .25em;
+    margin: 0.25em;
     border: solid white;
     color: white;
 }
@@ -206,7 +218,7 @@ a.no-style {
 }
 
 #certifications img:hover {
-    transform: translateY(-.5em);
+    transform: translateY(-0.5em);
 }
 
 .table-of-content {
@@ -220,10 +232,10 @@ a.no-style {
 
 .table-of-content a:hover {
     text-decoration: underline;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .fixed-lg-bottom {
         position: fixed;
         right: 0;
