@@ -109,7 +109,8 @@ section li {
 }
 
 .content {
-    background-color: #fffbf5;
+    /* background-color: ghostwhite; */
+    background-color: ghostwhite;
     padding: 1em;
     border: 1px solid #263159;
     border-radius: 1em;
@@ -119,6 +120,15 @@ section li {
 .certification {
     max-width: 200px;
     aspect-ratio: auto;
+}
+
+.star {
+    font-size: 1.5em;
+    color: gold !important;
+}
+
+.star-gray {
+    color: gray !important;
 }
 
 ul.no-bullet {
