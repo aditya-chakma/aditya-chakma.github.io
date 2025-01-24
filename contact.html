@@ -1,151 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aditya::Portfolio::Contact</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aditya::Portfolio::Contact</title>
 
-    <link rel="icon" href="images/aditya_circle.png" />
+        <link rel="icon" href="images/aditya_circle.png" />
 
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/portfolio.css" />
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/portfolio.css" />
 
-    <script src="js/portfolio.js"></script>
-  </head>
+        <script src="js/portfolio.js"></script>
+    </head>
 
-  <body>
-    <div class="sticky-top non-stick-lg" include="header.html"></div>
+    <body>
+        <div class="sticky-top non-stick-lg" include="header.html"></div>
 
-    <main class="container">
-      <div class="row">
-        <div class="col-12 col-lg-9 main-content">
-          <section>
-            <h3 class="username rounded-pill p-2">Aditya Chakma</h3>
-          </section>
-          <hr />
+        <main class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9 main-content">
+                    <section>
+                        <h3 class="username rounded-pill p-2">Aditya Chakma</h3>
+                    </section>
+                    <hr />
 
-          <section>
-            <form action="" method="post">
-              <div class="d-flex flex-column gap-1">
-                <div class="row">
-                  <label for="user-name" class="col-form-label col-3 text-end"
-                    >Name:
-                  </label>
-                  <div class="col-9 col-sm-6">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="user-name"
-                      id="user-name"
-                      placeholder="Full Name"
-                    />
-                  </div>
+                    <section>
+                        <form action="" method="post">
+                            <div class="d-flex flex-column gap-1">
+                                <div class="row">
+                                    <label for="user-name" class="col-form-label col-3 text-end">Name: </label>
+                                    <div class="col-9 col-sm-6">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            name="user-name"
+                                            id="user-name"
+                                            placeholder="Full Name"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="subject" class="col-form-label col-3 text-end">Subject: </label>
+                                    <div class="col-9 col-sm-6">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            name="subject"
+                                            id="subject"
+                                            placeholder="Contact"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="description" class="col-form-label col-3 text-end">Description: </label>
+                                    <div class="col-9 col-sm-6">
+                                        <textarea
+                                            name="description"
+                                            class="form-control"
+                                            id="description"
+                                            cols="30"
+                                            rows="10"
+                                            placeholder="Hi, nice to meet you!"
+                                        ></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-3"></div>
+                                    <div class="col-9 col-sm-6 text-end">
+                                        <button onclick="sendEmail()" class="btn btn-dark" type="button">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <hr />
+
+                    <div class="gap-3 d-flex justify-content-around flex-wrap">
+                        <div class="contact">
+                            <a href="https://github.com/chakma-aditya" target="_blank"
+                                ><img src="icons/github.png" alt="Github" /> Github</a
+                            >
+                        </div>
+
+                        <div class="contact">
+                            <a href="https://www.linkedin.com/in/aditya-chakma-55bb20199/">
+                                target="_blank" <img src="icons/linked-in.png" alt="Linked in" /> Linked in
+                            </a>
+                        </div>
+
+                        <div class="contact">
+                            <a href="https://www.kaggle.com/adityachakma" target="_blank"
+                                ><img src="icons/kaggle.png" alt="Kaggle" /> Kaggle</a
+                            >
+                        </div>
+
+                        <div class="contact">
+                            <a href="https://leetcode.com/adityachakma199/" target="_blank"
+                                ><img src="icons/leetcode.png" alt="Leet Code" />Leet Code</a
+                            >
+                        </div>
+                    </div>
                 </div>
 
-                <div class="row">
-                  <label for="subject" class="col-form-label col-3 text-end"
-                    >Subject:
-                  </label>
-                  <div class="col-9 col-sm-6">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      id="subject"
-                      placeholder="Contact"
-                    />
-                  </div>
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="sticky-top table-of-content content">
+                        <div include="page-navigation.html"></div>
+                    </div>
                 </div>
-
-                <div class="row">
-                  <label for="description" class="col-form-label col-3 text-end"
-                    >Description:
-                  </label>
-                  <div class="col-9 col-sm-6">
-                    <textarea
-                      name="description"
-                      class="form-control"
-                      id="description"
-                      cols="30"
-                      rows="10"
-                      placeholder="Hi, nice to meet you!"
-                    ></textarea>
-                  </div>
-                </div>
-
-                <div class="row mt-3">
-                  <div class="col-3"></div>
-                  <div class="col-9 col-sm-6 text-end">
-                    <button
-                      onclick="sendEmail()"
-                      class="btn btn-dark"
-                      type="button"
-                    >
-                      Send
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </section>
-          <hr />
-
-          <div class="gap-3 d-flex justify-content-around flex-wrap">
-            <div class="contact">
-              <a href="https://github.com/chakma-aditya"
-                ><img src="icons/github.png" alt="Github" /> Github</a
-              >
             </div>
+        </main>
 
-            <div class="contact">
-              <a href="https://www.linkedin.com/in/aditya-chakma-55bb20199/">
-                <img src="icons/linked-in.png" alt="Linked in" /> Linked in
-              </a>
-            </div>
+        <div include="footer.html"></div>
 
-            <div class="contact">
-              <a href="https://www.kaggle.com/adityachakma"
-                ><img src="icons/kaggle.png" alt="Kaggle" /> Kaggle</a
-              >
-            </div>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            includeHTML();
 
-            <div class="contact">
-              <a href="https://leetcode.com/adityachakma199/"
-                ><img src="icons/leetcode.png" alt="Leet Code" />Leet Code</a
-              >
-            </div>
-          </div>
-        </div>
+            function sendEmail() {
+                var userName = document.getElementById("user-name");
+                var subject = document.getElementById("subject");
+                var body = document.getElementById("description");
 
-        <div class="col-lg-3 d-none d-lg-block">
-          <div class="sticky-top table-of-content content">
-            <div include="page-navigation.html"></div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <div include="footer.html"></div>
-
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-      includeHTML();
-
-      function sendEmail() {
-        var userName = document.getElementById("user-name");
-        var subject = document.getElementById("subject");
-        var body = document.getElementById("description");
-
-        window.location.href =
-          "mailto:adityachakma199@gmail.com?cc=aditya.chakma@therapservices.net" +
-          "&subject=[contact-portfolio]::" +
-          subject.value +
-          "&body=[user.name\=" +
-          userName.value +
-          "]::" +
-          body.value;
-      }
-    </script>
-  </body>
+                window.location.href =
+                    "mailto:adityachakma199@gmail.com?cc=aditya.chakma@therapservices.net" +
+                    "&subject=[contact-portfolio]::" +
+                    subject.value +
+                    "&body=[user.name\=" +
+                    userName.value +
+                    "]::" +
+                    body.value;
+            }
+        </script>
+    </body>
 </html>
