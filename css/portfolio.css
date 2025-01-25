@@ -42,6 +42,7 @@ footer {
 nav {
     /* background-color: #263159; */
     background-color: #f6f8fa;
+    min-height: 3.5em;
 }
 
 nav a {
@@ -59,18 +60,16 @@ nav a {
     padding-top: 0.25em;
     margin-left: 5px;
     margin-right: 5px;
-
-    animation: jump 1s infinite;
 }
 
-/* nav a:hover {
+nav a:hover {
     box-shadow: 0 0.25em 0.25em 0.25em rgb(196, 193, 188);
 
     transform: translateY(-0.25em);
     transition: 0.25s;
 
     background-color: white;
-} */
+}
 
 nav img {
     height: 1.5em;
@@ -270,14 +269,15 @@ a.no-style {
 
 @keyframes jump {
     0% {
-      transform: translateY(0); 
+        transform: translateY(0);
     }
     50% {
-      transform: translateY(-0.25em); 
+        transform: translateY(-0.25em);
     }
     100% {
-      transform: translateY(0); 
+        transform: translateY(0);
     }
+}
 
 /* @media screen and (min-width:992px) {
     .non-stick-lg {
