@@ -1,47 +1,35 @@
 <header>
-    <!-- implement offcanvas navbar -->
-    <nav class="navbar navbar-expand-lg text-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Aditya Chakma</a>
         <button
-            id="navbar-button"
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#nav-collapsable"
-            aria-controls="nav-collapsable"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
         >
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-list"
-                viewBox="0 0 16 16"
-            >
-                <path
-                    fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                />
-            </svg>
-            Menu
+            <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="nav-collapsable">
-            <div class="d-flex justify-content-around flex-fill">
-                <div class="nav-left d-flex align-items-center">
-                    <a id="home-link" href="index.html"><img src="icons/home.png" /> Home</a>
-                </div>
-
-                <div class="d-flex justify-content-lg-between flex-column flex-lg-row nav-right gap-3">
-                    <a id="education-link" href="education.html"><img src="icons/education.png" /> Education</a>
-                    <a id="project-link" href="projects.html"><img src="icons/project.png" /> Projects</a>
-                    <a id="experience-link" href="experience.html"
-                        ><img src="icons/skill.png" /> Experience and Technical Skills</a
-                    >
-                    <a id="contact-link" href="contact.html"><img src="icons/contacts.png" /> Contact</a>
-                </div>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="experience.html">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
 </header>
