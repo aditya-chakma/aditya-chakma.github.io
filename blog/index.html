@@ -3,12 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Blog</title>
+        <title>Aditya::Portfolio::Blog</title>
         <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
-        <title>Aditya::Portfolio::Home</title>
-
         <link rel="icon" href="../images/aditya_circle.png" />
-
         <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
         <link rel="stylesheet" href="../css/portfolio.css" />
 
@@ -19,11 +16,7 @@
             <div class="row">
                 <div class="col-12 main-content">
                     <section>
-                        <div include="username-contacts.html"></div>
-                    </section>
-
-                    <section class="content">
-                        <zero-md id="blog" src="./Data-Structures-and-Algorithms/{path}"></zero-md>
+                        <zero-md src="./blog.md"></zero-md>
                     </section>
                 </div>
             </div>
@@ -32,12 +25,7 @@
         <script src="../js/bootstrap.min.js"></script>
         <script>
             (() => {
-                const markdown = document.getElementById("blog");
-
-                var source = markdown.getAttribute("src");
-                source = source.replace("{path}", getBlogName());
-
-                markdown.setAttribute("src", source);
+                console.log("Hey there!");
             })();
         </script>
     </body>
