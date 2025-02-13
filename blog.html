@@ -25,9 +25,7 @@
                     </section>
 
                     <section class="content">
-                        <zero-md
-                            src="https://raw.githubusercontent.com/aditya-chakma/aditya-chakma/refs/heads/master/README.md"
-                        ></zero-md>
+                        <zero-md id="blog" src="./Data-Structures-and-Algorithms/{path}"></zero-md>
                     </section>
                 </div>
             </div>
@@ -38,6 +36,15 @@
         <script src="js/bootstrap.min.js"></script>
         <script>
             includeHTML();
+
+            (() => {
+                const markdown = document.getElementById("blog");
+
+                var source = markdown.getAttribute("src");
+                source = source.replace("{path}", getBlogName());
+
+                markdown.setAttribute("src", source);
+            })();
         </script>
     </body>
 </html>
