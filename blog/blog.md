@@ -4,15 +4,23 @@
 
 Fell free to reach out to me for contribution or any suggestions
 
+## Algorithms
+
+### Subarrays
+
+- [Kadanes Max-Min Subarray Sum](./blog.html?blog=algorithms/subarray/Kadanes_Max_min_subarray_sum.md)
+
+### Prime Numbers
+
+- [Sieve of Eratosthenes](./blog.html?blog=algorithms/prime-numbers/Sieve-of-Eratosthenes.md)
+
+### Sorting
+
+- [Bucket Sort](./blog.html?blog=algorithms/sorting/BucketSort.md)
+
 ## Data structures
 
 ### Graph
 
 - [Disjoint Set Union (DSU)](./blog.html?blog=data-structures/Union.md)
 - [Trie](./blog.html?blog=data-structures/Trie.md)
-
-## Algorithms
-
-### Prime Numbers
-
-- [Sieve of Eratosthenes](./blog.html?blog=algorithms/prime-numbers/Sieve-of-Eratosthenes.md)
