@@ -19,6 +19,7 @@ body {
 
 main {
     padding: 1em;
+    min-height: 90vh;
     /* margin: 1em; */
 }
 
@@ -64,6 +65,7 @@ nav a {
 
 nav a:hover {
     box-shadow: 0 0.25em 0.25em 0.25em rgb(196, 193, 188);
+    border-radius: 5px;
 
     transform: translateY(-0.25em);
     transition: 0.25s;
