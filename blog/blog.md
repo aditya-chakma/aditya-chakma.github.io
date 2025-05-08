@@ -20,7 +20,11 @@ Fell free to reach out to me for contribution or any suggestions
 
 ## Data structures
 
+### List
+
+- [Linked List](./blog.html?blog=data-structures/list/LinkedList.md)
+
 ### Graph
 
-- [Disjoint Set Union (DSU)](./blog.html?blog=data-structures/Union.md)
-- [Trie](./blog.html?blog=data-structures/Trie.md)
+- [Disjoint Set Union (DSU)](./blog.html?blog=data-structures/tree/Union.md)
+- [Trie](./blog.html?blog=data-structures/tree/Trie.md)
