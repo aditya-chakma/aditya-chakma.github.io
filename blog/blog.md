@@ -22,9 +22,13 @@ Fell free to reach out to me for contribution or any suggestions
 
 ### List
 
-- [Linked List](./blog.html?blog=data-structures/list/LinkedList.md)
+- [Linked List](./blog.html?blog=data-structures/fundamentals/LinkedList.md)
 
 ### Graph
 
 - [Disjoint Set Union (DSU)](./blog.html?blog=data-structures/tree/Union.md)
 - [Trie](./blog.html?blog=data-structures/tree/Trie.md)
+
+## Engineering
+
+- [Oh Hibernae! My Hibernate!](./blog.html?blog=engineering/oh-hibernate.md)
