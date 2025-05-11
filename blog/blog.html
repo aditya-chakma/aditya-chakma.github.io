@@ -23,7 +23,56 @@
                     </section>
 
                     <section class="content">
-                        <zero-md id="blog" src="./Data-Structures-and-Algorithms/{path}"></zero-md>
+                        <zero-md id="blog" src="./Data-Structures-and-Algorithms/{path}">
+                            <template>
+                                <div class="markdown-styles" data-hash="1pd92os">
+                                    <style>
+                                        :host {
+                                            display: block;
+                                            position: relative;
+                                            contain: content;
+                                        }
+                                        :host([hidden]) {
+                                            display: none;
+                                        }
+                                    </style>
+
+                                    <link
+                                        rel="stylesheet"
+                                        href="https://cdn.jsdelivr.net/npm/github-markdown-css@5/github-markdown.min.css"
+                                    /><link
+                                        rel="stylesheet"
+                                        href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11/styles/github.min.css"
+                                    /><link
+                                        rel="stylesheet"
+                                        href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11/styles/github-dark.min.css"
+                                        media="(prefers-color-scheme:dark)"
+                                    /><link
+                                        rel="stylesheet"
+                                        href="https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css"
+                                    />
+                                </div>
+
+                                <style>
+                                    p:has(
+                                            img[alt="server-crash"],
+                                            img[alt="cron-time"],
+                                            img[alt="java-spring-hibernate"]
+                                        ) {
+                                        text-align: center;
+                                    }
+
+                                    img[alt="server-crash"],
+                                    img[alt="cron-time"] {
+                                        max-width: 50%;
+                                    }
+
+                                    img[alt="linked-list"] {
+                                        max-width: 80%;
+                                    }
+                                </style>
+                            </template>
+                        </zero-md>
                     </section>
                 </div>
             </div>
