@@ -1,0 +1,3 @@
+[submodule "Data-Structures-and-Algorithms"]
+	path = blog/Data-Structures-and-Algorithms
+	url = git@github.com:aditya-chakma/Data-Structures-and-Algorithms.git
