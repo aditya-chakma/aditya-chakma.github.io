@@ -40,7 +40,6 @@ const Header = () => {
           <li><Link to="/education" onClick={toggleMenu}>Education</Link></li>
           <li><Link to="/certifications" onClick={toggleMenu}>Certifications & Achievements</Link></li>
           <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
-          <li><Link to="/blog" onClick={toggleMenu}>Blog</Link></li>
         </ul>
       </nav>
     </header>
