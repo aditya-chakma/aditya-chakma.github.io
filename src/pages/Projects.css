@@ -4,7 +4,12 @@
   padding: 2rem;
 }
 
-.personal-projects h2 {
+.personal-projects {
+  margin-bottom: 4rem;
+}
+
+.personal-projects h2,
+.course-projects h2 {
   font-size: 2rem;
   color: #2c3e50;
   margin-bottom: 2rem;
@@ -127,6 +132,12 @@
 
   .tag {
     font-size: 0.8rem;
+  }
+
+  .personal-projects h2,
+  .course-projects h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
   }
 }
 
