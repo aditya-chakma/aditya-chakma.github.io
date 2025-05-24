@@ -8,12 +8,14 @@ import Projects from './pages/Projects';
 import Education from './pages/Education';
 import Certifications from './pages/Certifications';
 import Contact from './pages/Contact';
+import DocumentTitle from './components/DocumentTitle';
 import './App.css';
 
 function App() {
     return (
         <Router basename="/">
             <div className="app">
+                <DocumentTitle />
                 <Header />
                 <main className="main-content">
                     <Routes>
