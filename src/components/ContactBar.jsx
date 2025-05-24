@@ -32,13 +32,13 @@ const ContactBar = () => {
           </div>
 
           <div className="contact">
-            <a href="/resources/Aditya_Chakma_CV.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Aditya_Chakma_CV.pdf" target="_blank" rel="noopener noreferrer">
               <img src={cvIcon} alt="CV or Resume" /> CV/Resume
             </a>
           </div>
 
           <div className="contact">
-            <a href="/resources/Aditya_Chakma_Toefl.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Aditya_Chakma_Toefl.pdf" target="_blank" rel="noopener noreferrer">
               <img src={toeflIcon} alt="TOEFL score" /> TOEFL
             </a>
           </div>
