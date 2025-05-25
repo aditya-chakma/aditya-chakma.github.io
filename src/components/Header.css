@@ -35,6 +35,21 @@
   color: #61dafb;
 }
 
+.nav-list li a.active {
+  color: #61dafb;
+  position: relative;
+}
+
+.nav-list li a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #61dafb;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;

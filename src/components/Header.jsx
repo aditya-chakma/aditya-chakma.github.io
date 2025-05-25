@@ -24,6 +24,11 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Function to check if the link is active
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
+
   return (
     <header className="header">
       <nav className="nav-container">
@@ -34,12 +39,12 @@ const Header = () => {
         </div>
         {isMenuOpen && <div className="backdrop" onClick={toggleMenu}></div>}
         <ul className={`nav-list ${isMenuOpen ? 'active' : ''}`}>
-          <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-          <li><Link to="/skills" onClick={toggleMenu}>Skills/Experience</Link></li>
-          <li><Link to="/projects" onClick={toggleMenu}>Projects</Link></li>
-          <li><Link to="/education" onClick={toggleMenu}>Education</Link></li>
-          <li><Link to="/certifications" onClick={toggleMenu}>Certifications & Achievements</Link></li>
-          <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
+          <li><Link to="/" className={isActive('/') ? 'active' : ''} onClick={toggleMenu}>Home</Link></li>
+          <li><Link to="/skills" className={isActive('/skills') ? 'active' : ''} onClick={toggleMenu}>Skills/Experience</Link></li>
+          <li><Link to="/projects" className={isActive('/projects') ? 'active' : ''} onClick={toggleMenu}>Projects</Link></li>
+          <li><Link to="/education" className={isActive('/education') ? 'active' : ''} onClick={toggleMenu}>Education</Link></li>
+          <li><Link to="/certifications" className={isActive('/certifications') ? 'active' : ''} onClick={toggleMenu}>Certifications & Achievements</Link></li>
+          <li><Link to="/contact" className={isActive('/contact') ? 'active' : ''} onClick={toggleMenu}>Contact</Link></li>
         </ul>
       </nav>
     </header>
