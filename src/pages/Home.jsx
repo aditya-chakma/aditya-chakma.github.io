@@ -15,7 +15,7 @@ const Home = () => {
           </h1>
           <div className="introduction">
             <p>
-                I am Aditya. I am a Software Engineer with 4.5 years of experience building scalable, reliable and secure 
+                I am Aditya. I am a Software Engineer with 5 years of experience building scalable, reliable and secure 
                 microservices using Java. 
             </p>
 

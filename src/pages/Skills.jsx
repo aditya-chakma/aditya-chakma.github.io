@@ -9,10 +9,12 @@ const Skills = () => {
       'Python (expert), Javascript (fluent), R (experienced), Matlab (experienced)'
     ],
     'Database': [
-      'Oracle DBMS, MySql, PostgreSQL'
+      'Oracle DBMS, MySql, PostgreSQL',
+      'MongoDB'
     ],
-    'Dev-Ops': [
-      'Nginx, Weblogic, Tomcat, Docker, Apache Zookeeper, Jenkins (CI/CD)'
+    'Cloud & Dev-Ops': [
+      'Nginx, Weblogic, Tomcat, Docker, Apache Zookeeper, Jenkins (CI/CD)',
+      'AWS (IAM, S3, SNS, SQS, Lambda, etc.)'
     ],
     'Project Management': [
       'Jira, Trello, Slack'
@@ -25,7 +27,8 @@ const Skills = () => {
       'JSON, Protobuf'
     ],
     'Load Testing': [
-      'Gatling, Postman, JUnit'
+      'Gatling, Postman, JUnit',
+      'Cypress, Playwright'
     ],
     'Machine Learning frameworks': [
       'Tensorflow 2.0, Keras, Pytorch',
@@ -39,36 +42,67 @@ const Skills = () => {
 
   const workExperience = {
     company: "Therap Services LLC",
-    description: "4+ years of Software Engineering experience and specialized in developing and managing complex projects, especially in healthcare and EVV (Electronic Visit Validation) systems. Built and maintained a B2B cursomer facing enterprise application. Worked in a team of 50+ members and led some core projects, delivering high-quality results. Strong experience in code review, cross-team development, mentoring, ensuring compliance with accessibility, and efficient project delivery using Scrum practices. I aim to build secure, reliable, scalable, and robust systems.",
+    description: "5 years of Software Engineering experience and specialized in developing and managing complex projects, especially in healthcare and EVV (Electronic Visit Validation) systems. Built and maintained a B2B cursomer facing enterprise application. Worked in a team of 50+ members and led some core projects, delivering high-quality results. Strong experience in code review, cross-team development, mentoring, ensuring compliance with accessibility, and efficient project delivery using Scrum practices. I aim to build secure, reliable, scalable, and robust systems.",
     roles: [
       {
         title: "Software Engineer II",
         period: "April 2024-Present",
         achievements: [
           "Developed and maintained a large-scale customer facing B2B SaaS application (therapservices.net) with 20+ state contracts. The application has 40,000+ Daily CCU (Concurrent users) and serves over 1,000,000+ individuals.",
+          
           "Worked on a team of 50+ members and maintained core system functionalities, including login, EVV (Electronic Visit Validation), Scheduling (Google calendar-like), and Secure messaging (Gmail-like secure messaging feature).",
+          
           "Architected and developed Webhook for Therap's aggregator application, enabling system-to-system communication with Therap suite efficiently and improving data integration",
+          
           "Mentored junior developers in multiple projects and participated in multiple tech-sessions.",
+          
           "Load tested API's using Gatling and Postman and optimized endpoints improving performance by a factor of 10x to handle over thousands of requests per second.",
+          
           "Designed a UUID and client secret generator for Therap applicaitons in distributed environment.",
-          "Reduced DB QPS by a factor of 25x for a featue related to most frequently used module (IDF) by system users, using Oracle coherence and write-back method from second level cache",
-          "Containerized multiple services including Therap's authentication server for consistent app deploymnet across multiple production and development environments.",
-          "Designed and developed dashboard and data-feed for Tennessee and Kentucky for data-driven decision-making, report- ing, and compliance monitoring, enabling real-time insights.",
-          "Worked on jdk and spring version upgrade for Theraps aggregator application.",
+          
+          `Optimized the most frequent cron-jobs and reduced DB QPS for high traffic features by leveraging 
+          Oracle coherence, query optimization, and intelligent indexing, achieving 25x more throughput and
+          20% reduction in latency`,
+          
+          `Containarized multiple services, including the authentication server, and developed a single-click 
+          deployment tool, streamlining DEV and QA deployment, cutting deployment time by 50%, and 
+          reducing developer hardware requirements by 33%`,
+          
+          `Developed data-feed and dashboard for high-traffic, high-volume data, processing over 1 million 
+          records per day using Spring Batch, JDBC Template, Redis with asynchronous processing, 
+          multithreading, and caching for data-driven decision-making, reporting, and compliance monitoring, 
+          enabling real-time insights`,
+          
+          "Steadfastly managed the JDK 8 to JDK 21 upgrade of the Therap application, managed in-app and service dependencies, leveraging OpenRewrite and custom recipes for efficient execution",
+          
           "Designed data-integration pipeline and fully automated manual workflows for data integration (SFTP and REST APIs), enabling Therap to secure Kentucky state project.",
+          
           "Rearchitected data import pipeline, enabling 100x faster processing and improved latency for large imports (150K+ rows) by using queue and batching techniques.",
-          "Architected and developed AI-ChatBot for enhanced user interaction and support using ollama, reducing operational cost of Service Agents."
-        ]
+          
+          `Contributed to implementing in-house authentication module using Spring Security featuring MFA, 
+          OAuth2, JWT, Role-based Access control, IP whitelisting, rate-limiting, CAPTCHA, etc, replacing 
+          third-party IDPs and reducing authentication-related operational costs to zero`
+
+          ]
       },
       {
         title: "Software Engineer",
         period: "March 2022-April 2024",
         achievements: [
-          "Led critical projects such as Salesforce live chat integration in Therap System and automated chat import process from a third-party system using RestAPI.",
+          "Led Salesforce project and integrated Live Help into therap system, replacing legacy Oracle RightNow. Developed a data integration pipeline with salesforce APIs using RESTful API services",
+          
           "Architected and redesigned third-party API endpoints, reducing API calls overhead by 50%. Developed several RestAPIs for multiple existing modules to support cross-platform development, including mobile platforms and IoT.",
-          "Worked on HIPAA-compliant healthcare projects handling PHI data. Delivered state-specific solutions for Kentucky and Tennessee, implemented rollup-dashboard, and contributed to meeting the 21st Century Cures Act mandated by the Federal Government of the USA, which helped Therap to secure multi-million dollar state contracts.",
-          "Optimized on-demand loading for JavaScript scripts across the system, reducing network consumption by 20%.",
-          "Optimized the most frequent database queries for cron jobs, improving performance by up to 5x.",
+          
+          `Worked on HIPAA-compliant healthcare projects handling PHI data. Delivered state-specific solutions 
+          for Kentucky and Tennessee, implemented rollup-dashboard, and contributed to meeting the 21st 
+          Century Cures Act mandated by the Federal Government of the USA, which helped Therap to secure 
+          multi-million dollar state contracts`,
+
+          `Optimized on-demand loading of resources across the system, cached static resources, and integrated 
+          CDNs, reducing network bandwidth by 20% and improving page load time with overall responsiveness`,
+
+          "Optimized the most frequent database queries for cron jobs, improving throughput by upto 5x",
+          
           "Involved in development and QA-side server deployment using Weblogic, Nginx, Tomcat ensuring high performance and stability."
         ]
       },
@@ -77,9 +111,13 @@ const Skills = () => {
         period: "March 2021-March 2022",
         achievements: [
           "Developed and maintained several state projects and contributed to core modules",
+          
           "Optimized and fixed bugs for core modules, such as Therap's T-log with millions of forms submitted every week.",
+          
           "Fixed bugs for existing API's and developed RestAPIs for third party consumers.",
+          
           "Developed an in-house message translation tracker for localization of the application",
+          
           "Worked on Webhook, Message Queue, Push notifications, RESTful APIs, Spring Security, REACT, Spring MVC, Spring Boot, Servlet, Hibernate, JDBC, MySQL, Git, Java, JavaScript, and jQuery."
         ]
       }
