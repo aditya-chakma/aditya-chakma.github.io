@@ -32,14 +32,14 @@ const ContactBar = () => {
           </div>
 
           <div className="contact">
-            <a href="/Aditya_Chakma_CV.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Aditya_Chakma_Resume.pdf" target="_blank" rel="noopener noreferrer">
               <img src={cvIcon} alt="CV or Resume" /> CV/Resume
             </a>
           </div>
 
           <div className="contact">
-            <a href="/Aditya_Chakma_Toefl.pdf" target="_blank" rel="noopener noreferrer">
-              <img src={toeflIcon} alt="TOEFL score" /> TOEFL
+            <a href="/Aditya_Chakma_IELTS.pdf" target="_blank" rel="noopener noreferrer">
+              <img src={toeflIcon} alt="IELTS score" /> IELTS
             </a>
           </div>
         </div>
