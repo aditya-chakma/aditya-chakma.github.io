@@ -5,6 +5,11 @@ import ContactBar from "../components/ContactBar";
 const Education = () => {
     const education = [
         {
+            degree: "Master of Cyber Security",
+            institution: "University of Newcastle Australia",
+            period: "January 2026 - December 2027",
+        },
+        {
             degree: "M.Sc. in Computer Science and Engineering",
             institution: "Bangladesh University of Engineering and Technology (BUET)",
             period: "July 2021 - 2023",
@@ -61,25 +66,29 @@ const Education = () => {
 
                             <div className="institution-info">
                                 <p className="institution">{edu.institution}</p>
-                                <p className="cgpa">CGPA: {edu.cgpa}</p>
+                                {edu.cgpa !== undefined && <p className="cgpa">CGPA: {edu.cgpa}</p>}
                             </div>
 
-                            <div className="courses">
-                                <h4>Key Courses</h4>
-                                <div className="course-tags">
-                                    {edu.courses.map((course, idx) => (
-                                        <span key={idx} className="course-tag">
-                                            {course}
-                                        </span>
-                                    ))}
+                            {edu.courses !== undefined && (
+                                <div className="courses">
+                                    <h4>Key Courses</h4>
+                                    <div className="course-tags">
+                                        {edu.courses.map((course, idx) => (
+                                            <span key={idx} className="course-tag">
+                                                {course}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
+                            )}
 
-                            <div className="thesis">
-                                <h4>Thesis</h4>
-                                <p className="thesis-title">{edu.thesis.title}</p>
-                                <span className="thesis-status">{edu.thesis.status}</span>
-                            </div>
+                            {edu.thesis !== undefined && (
+                                <div className="thesis">
+                                    <h4>Thesis</h4>
+                                    <p className="thesis-title">{edu.thesis.title}</p>
+                                    <span className="thesis-status">{edu.thesis.status}</span>
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>

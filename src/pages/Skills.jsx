@@ -5,7 +5,7 @@ import ContactBar from "../components/ContactBar";
 const Skills = () => {
     const technicalSkills = {
         "Programming languages": ["Java , Go, C++ , C# ", "Python , Javascript , R , Matlab "],
-        Database: ["Oracle DBMS, MySql, PostgreSQL", "MongoDB"],
+        Database: ["Oracle DBMS, PostgreSQL, MySql", "MongoDB"],
         "Cloud & Dev-Ops": [
             "Nginx, Weblogic, Tomcat, Docker, Apache Zookeeper, Jenkins (CI/CD)",
             "AWS (IAM, S3, SNS, SQS, Lambda, etc.)",
@@ -13,8 +13,8 @@ const Skills = () => {
         "Project Management": ["Jira, Trello, Slack"],
         "Web Frameworks and technologies": [
             "Spring boot, Spring MVC, Spring Cloud",
-            "Hibernate, Java EE",
-            "REACT, JSP, JSF, Primefaces, Thymeleaf, XHTML, HTML, CSS",
+            "React.js, Next.js, JSP, JSF, Primefaces, Thymeleaf, XHTML, HTML, CSS",
+            "Hibernate, Java EE/ Jakarta EE",
             "REST API, SOAP, Sweager",
             "JSON, Protobuf",
         ],

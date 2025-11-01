@@ -13,7 +13,7 @@ const Home = () => {
                     <h1>
                         Hi <img src={waveHand} alt="Wave" className="wave-hand" />
                     </h1>
-                    <div className="introduction">
+                    <div className="introduction" style={{ textAlign: "justify" }}>
                         <p>
                             I am Aditya. I am a Software Engineer with 5 years of experience building scalable, reliable
                             and secure microservices using Java.
@@ -22,9 +22,8 @@ const Home = () => {
                         <p>
                             During my tenure, I have led multiple system-critical projects and integrated various
                             third-party services, while also developing highly secure systems for protected health
-                            information (PHI) data. My work has significantly optimized system performance through
-                            frequent cron optimizations, reduced DB QPS, improved system response times, and enhanced
-                            data pipelines.
+                            information (PHI) data. In my work, I have optimized system performance by reduced DB QPS,
+                            reducing latency, and increasing system throughput.
                         </p>
 
                         <p>

@@ -97,6 +97,15 @@ h1 {
     font-size: 1.1rem;
 }
 
+.profile-highlights ul {
+    list-style-type: disc;
+    padding-left: 2em;
+}
+
+.profile-highlights li::marker {
+    font-size: 1.5em;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .content-container {
