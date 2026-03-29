@@ -1,8 +1,9 @@
+'use client';
 import React, { useState } from 'react';
-import './Contact.css';
-import ContactBar from '../components/ContactBar';
+import ContactBar from '@/src/components/ContactBar';
+import "@/src/styles/Contact.css";
 
-const Contact = () => {
+export default function ContactContent() {
   const [formData, setFormData] = useState({
     name: '',
     subject: '',
@@ -21,7 +22,9 @@ const Contact = () => {
     e.preventDefault();
     const emailBody = `Name: ${formData.name}\nDescription: ${formData.description}`;
     const mailtoLink = `mailto:adityachakma199@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(emailBody)}`;
-    window.location.href = mailtoLink;
+    if (typeof window !== 'undefined') {
+      window.location.href = mailtoLink;
+    }
   };
 
   return (
@@ -64,7 +67,7 @@ const Contact = () => {
                 name="description"
                 value={formData.description}
                 onChange={handleChange}
-                rows="10"
+                rows={10}
                 placeholder="Hi, nice to meet you!"
                 required
               />
@@ -78,6 +81,4 @@ const Contact = () => {
       </section>
     </div>
   );
-};
-
-export default Contact; 
+}

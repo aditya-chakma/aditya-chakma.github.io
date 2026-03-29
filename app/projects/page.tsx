@@ -1,6 +1,12 @@
 import React from 'react';
-import './Projects.css';
-import ContactBar from '../components/ContactBar';
+import ContactBar from '@/src/components/ContactBar';
+import "@/src/styles/Projects.css";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Projects | Aditya::Portfolio',
+  description: 'Personal and academic projects by Aditya Chakma, including Jumghor social media, e-commerce platforms, and browser extensions.',
+};
 
 const Projects = () => {
   const personalProjects = [
@@ -217,4 +223,4 @@ const Projects = () => {
   );
 };
 
-export default Projects; 
+export default Projects;

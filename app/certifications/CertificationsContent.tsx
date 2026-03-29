@@ -1,39 +1,25 @@
+'use client';
 import React, { useState } from "react";
-import "./Certifications.css";
-import ContactBar from "../components/ContactBar";
-import ImageModal from "../components/ImageModal";
+import ContactBar from "@/src/components/ContactBar";
+import ImageModal from "@/src/components/ImageModal";
+import "@/src/styles/Certifications.css";
 
-// Import BDMO images
-import bdmo2011 from "../assets/images/bdmo/2011.jpg";
-import bdmo2010 from "../assets/images/bdmo/2010.jpg";
-import bdmo2008 from "../assets/images/bdmo/2008.jpg";
+// Note: In Next.js App Router, metadata is defined in a separate export for Server Components.
+// Since this is a Client Component, we can either:
+// 1. Move the metadata to a parent layout or a wrapper server component.
+// 2. Use a separate file or a layout to define the metadata.
+// I'll create a parent layout or use the page.tsx as a server component and import the client logic.
+// But for simplicity in this migration, I'll put the metadata in a separate 'layout.tsx' if needed,
+// or just make this a client component and accept that metadata won't be here.
+// Actually, the best way is to have page.tsx be a server component and the content be a client component.
 
-// Import Certification images
-import cert1 from "../assets/images/certifications/Coursera 3V3PLW8DS4BT.jpg";
-import cert2 from "../assets/images/certifications/Coursera 4L5J5P98KN4J.jpg";
-import cert3 from "../assets/images/certifications/Coursera 7XRY4KXYKGLT.jpg";
-import cert4 from "../assets/images/certifications/Coursera A92KLND5EJUU.jpg";
-import cert5 from "../assets/images/certifications/Coursera DB5U7KES96ND.jpg";
-import cert6 from "../assets/images/certifications/Coursera E7QEN7H96DUF.jpg";
-import cert7 from "../assets/images/certifications/Coursera EWYYGJM85UPC.jpg";
-import cert8 from "../assets/images/certifications/Coursera LQ9ZS9DHHTQ5.jpg";
-import cert9 from "../assets/images/certifications/Coursera PGB4AZQ7Q4PT.jpg";
-import cert10 from "../assets/images/certifications/Coursera SDJQ3ULKJQ53.jpg";
-import cert11 from "../assets/images/certifications/Coursera U4A4B9A53JC7.jpg";
-import cert12 from "../assets/images/certifications/Coursera VM8AG2EAQYPT.jpg";
-import cert13 from "../assets/images/certifications/Coursera W67A4ZPGD99T.jpg";
-import cert14 from "../assets/images/certifications/Coursera XCZPX5XMJ3MU.jpg";
-
-// Import perfect attendance certificate
-import perfect_attendance from "../assets/perfect_attendance.jpeg";
-
-const Certifications = () => {
+export default function CertificationsPage() {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const bdmoImages = [
-        { src: bdmo2011, year: "2011", alt: "BDMO Certificate 2011" },
-        { src: bdmo2010, year: "2010", alt: "BDMO Certificate 2010" },
-        { src: bdmo2008, year: "2008", alt: "BDMO Certificate 2008" },
+        { src: "/assets/images/bdmo/2011.jpg", year: "2011", alt: "BDMO Certificate 2011" },
+        { src: "/assets/images/bdmo/2010.jpg", year: "2010", alt: "BDMO Certificate 2010" },
+        { src: "/assets/images/bdmo/2008.jpg", year: "2008", alt: "BDMO Certificate 2008" },
     ];
 
     const competitions = [
@@ -45,24 +31,26 @@ const Certifications = () => {
     ];
 
     const onlineCertifications = [
-        { src: cert1, title: "Neural Networks and Deep learning" },
-        { src: cert2, title: "Sequence Models" },
-        { src: cert3, title: "Getting And Cleaning Data" },
-        { src: cert4, title: "R Programming" },
-        { src: cert5, title: "Structuring Machine Learning Projects" },
-        { src: cert6, title: "The Data Scientist's Toolbox" },
-        { src: cert7, title: "Machine Learning" },
-        { src: cert8, title: "Introduction to Machine Learning" },
-        { src: cert9, title: "Deep Learning Specialization" },
+        { src: "/assets/images/certifications/Coursera 3V3PLW8DS4BT.jpg", title: "Neural Networks and Deep learning" },
+        { src: "/assets/images/certifications/Coursera 4L5J5P98KN4J.jpg", title: "Sequence Models" },
+        { src: "/assets/images/certifications/Coursera 7XRY4KXYKGLT.jpg", title: "Getting And Cleaning Data" },
+        { src: "/assets/images/certifications/Coursera A92KLND5EJUU.jpg", title: "R Programming" },
+        { src: "/assets/images/certifications/Coursera DB5U7KES96ND.jpg", title: "Structuring Machine Learning Projects" },
+        { src: "/assets/images/certifications/Coursera E7QEN7H96DUF.jpg", title: "The Data Scientist's Toolbox" },
+        { src: "/assets/images/certifications/Coursera EWYYGJM85UPC.jpg", title: "Machine Learning" },
+        { src: "/assets/images/certifications/Coursera LQ9ZS9DHHTQ5.jpg", title: "Introduction to Machine Learning" },
+        { src: "/assets/images/certifications/Coursera PGB4AZQ7Q4PT.jpg", title: "Deep Learning Specialization" },
         {
-            src: cert10,
+            src: "/assets/images/certifications/Coursera SDJQ3ULKJQ53.jpg",
             title: "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Normalization",
         },
-        { src: cert11, title: "Welcome to Game Theory" },
-        { src: cert12, title: "Image Data Augmentation in Keras" },
-        { src: cert13, title: "How to win a data science Competition: Learn from top Kagglers" },
-        { src: cert14, title: "Convolutional Neural Networks" },
+        { src: "/assets/images/certifications/Coursera U4A4B9A53JC7.jpg", title: "Welcome to Game Theory" },
+        { src: "/assets/images/certifications/Coursera VM8AG2EAQYPT.jpg", title: "Image Data Augmentation in Keras" },
+        { src: "/assets/images/certifications/Coursera W67A4ZPGD99T.jpg", title: "How to win a data science Competition: Learn from top Kagglers" },
+        { src: "/assets/images/certifications/Coursera XCZPX5XMJ3MU.jpg", title: "Convolutional Neural Networks" },
     ];
+
+    const perfect_attendance = "/assets/perfect_attendance.jpeg";
 
     return (
         <div className="certifications-page">
@@ -118,6 +106,4 @@ const Certifications = () => {
             <ImageModal isOpen={!!selectedImage} onClose={() => setSelectedImage(null)} imageUrl={selectedImage} />
         </div>
     );
-};
-
-export default Certifications;
+}

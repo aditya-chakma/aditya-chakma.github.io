@@ -1,6 +1,12 @@
 import React from "react";
-import "./Education.css";
-import ContactBar from "../components/ContactBar";
+import ContactBar from "@/src/components/ContactBar";
+import "@/src/styles/Education.css";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Education | Aditya::Portfolio',
+  description: 'Academic background of Aditya Chakma: Master of Cyber Security (UON), M.Sc. and B.Sc. in CSE from BUET.',
+};
 
 const Education = () => {
     const education = [

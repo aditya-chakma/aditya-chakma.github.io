@@ -1,8 +1,17 @@
 import React from "react";
-import "./Home.css";
-import profilePic from "../assets/images/Aditya.jpg";
-import waveHand from "../assets/images/wh.gif";
-import ContactBar from "../components/ContactBar";
+import ContactBar from "@/src/components/ContactBar";
+import "@/src/styles/Home.css";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Aditya::Portfolio',
+  description: 'Aditya Chakma - Software Engineer with 5 years of experience building scalable, reliable and secure microservices using Java.',
+  openGraph: {
+    title: 'Aditya::Portfolio',
+    description: 'Software Engineer with 5 years of experience in Java, Go, and Microservices.',
+    images: ['/assets/images/Aditya.jpg'],
+  },
+};
 
 const Home = () => {
     return (
@@ -11,7 +20,7 @@ const Home = () => {
             <div className="content-container">
                 <div className="left-content">
                     <h1>
-                        Hi <img src={waveHand} alt="Wave" className="wave-hand" />
+                        Hi <img src="/assets/images/wh.gif" alt="Wave" className="wave-hand" />
                     </h1>
                     <div className="introduction" style={{ textAlign: "justify" }}>
                         <p>
@@ -35,7 +44,7 @@ const Home = () => {
                 </div>
 
                 <div className="profile-section">
-                    <img src={profilePic} alt="Aditya Chakma" className="profile-picture" />
+                    <img src="/assets/images/Aditya.jpg" alt="Aditya Chakma" className="profile-picture" />
                 </div>
 
                 <div className="right-content">

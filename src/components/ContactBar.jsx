@@ -1,10 +1,5 @@
 import React from 'react';
 import './ContactBar.css';
-import githubIcon from '../assets/icons/github.png';
-import linkedInIcon from '../assets/icons/linked-in.png';
-import kaggleIcon from '../assets/icons/kaggle.png';
-import cvIcon from '../assets/icons/cv.png';
-import toeflIcon from '../assets/icons/toefl.png';
 
 const ContactBar = () => {
   return (
@@ -15,31 +10,31 @@ const ContactBar = () => {
         <div className="contact-links">
           <div className="contact">
             <a href="https://github.com/aditya-chakma" target="_blank" rel="noopener noreferrer">
-              <img src={githubIcon} alt="Github" /> Github
+              <img src="/assets/icons/github.png" alt="Github" /> Github
             </a>
           </div>
 
           <div className="contact">
             <a href="https://www.linkedin.com/in/aditya-chakma/" target="_blank" rel="noopener noreferrer">
-              <img src={linkedInIcon} alt="Linked In" /> Linked In
+              <img src="/assets/icons/linked-in.png" alt="Linked In" /> Linked In
             </a>
           </div>
 
           <div className="contact">
             <a href="https://www.kaggle.com/adityachakma" target="_blank" rel="noopener noreferrer">
-              <img src={kaggleIcon} alt="Kaggle" /> Kaggle
+              <img src="/assets/icons/kaggle.png" alt="Kaggle" /> Kaggle
             </a>
           </div>
 
           <div className="contact">
             <a href="/Aditya_Chakma_Resume.pdf" target="_blank" rel="noopener noreferrer">
-              <img src={cvIcon} alt="CV or Resume" /> CV/Resume
+              <img src="/assets/icons/cv.png" alt="CV or Resume" /> CV/Resume
             </a>
           </div>
 
           <div className="contact">
             <a href="/Aditya_Chakma_IELTS.pdf" target="_blank" rel="noopener noreferrer">
-              <img src={toeflIcon} alt="IELTS score" /> IELTS
+              <img src="/assets/icons/toefl.png" alt="IELTS score" /> IELTS
             </a>
           </div>
         </div>
