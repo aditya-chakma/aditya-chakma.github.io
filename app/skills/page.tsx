@@ -1,45 +1,106 @@
 import React from "react";
 import ContactBar from "@/src/components/ContactBar";
 import "@/src/styles/Skills.css";
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Skills | Aditya::Portfolio',
-    description: 'Technical skills and work experience of Aditya Chakma, Software Engineer II at Therap Services LLC.',
+    title: "Skills | Aditya::Portfolio",
+    description: "Technical skills and work experience of Aditya Chakma, Software Engineer II at Therap Services LLC.",
 };
 
 const Skills = () => {
-    const technicalSkills = {
-        "Programming languages": ["Java, Go, C++, TypeScript", "Python, Javascript, SQL, C#"],
-        "Agentic AI & Automation": [
-            "Autonomous Development Workflows (/plan, /design, /implement, /test, /review)",
-            "AI Agent Persona Orchestration (Product Manager, Architect, Senior Dev, SDET, Security Auditor)",
-            "Context-aware planning, HITL (Human-in-the-Loop) guardrails, validation checklists"
-        ],
-        Database: ["Oracle DBMS, PostgreSQL, MySQL", "MongoDB, Redis, AWS RDS"],
-        "Cloud, Networking & DevOps": [
-            "Docker, Kubernetes, Jenkins (CI/CD), GitHub Actions, Maven",
-            "AWS (IAM, S3, SNS, SQS, Lambda, Route 53, CloudFront, CloudWatch)",
-            "Nginx, Apache Zookeeper, WebLogic, Tomcat, Webhooks"
-        ],
-        "Web Frameworks & Technologies": [
-            "Spring Boot, Spring Cloud, Spring Security, Hibernate",
-            "React.js, Next.js, Tailwind CSS, Shadcn/UI, Zod, TanStack Query",
-            "REST API, SOAP, Swagger, JSON, Protobuf, gRPC"
-        ],
-        "Load Testing & QA": ["Gatling, Postman, JUnit", "Cypress, Playwright"],
-        "Machine Learning & AI": [
-            "TensorFlow, Keras, PyTorch, Scikit-Learn",
-            "XGBoost, CatBoost, LightGBM, Random Forest",
-            "Computer Vision (CNN, GAN, Visual Transformers for character recognition)"
-        ],
-        "Data Analysis & Visualization": ["Pandas, NumPy, Matplotlib, Seaborn"]
-    };
+    const technicalSkills = [
+        {
+            category: "Programming Languages",
+            skills: ["Java", "Go", "C++", "TypeScript", "Python", "JavaScript", "SQL", "C#"],
+            isTagCloud: true,
+        },
+        {
+            category: "Agentic AI & Automation",
+            skills: [
+                "Autonomous Development Workflows (/plan, /design, /implement, /test, /review)",
+                "AI Agent Persona Orchestration (Product Manager, Architect, Senior Dev, SDET, Security Auditor)",
+                "Context-aware planning, HITL (Human-in-the-Loop) guardrails, validation checklists",
+            ],
+            isTagCloud: false,
+        },
+        {
+            category: "Database",
+            skills: ["Oracle DBMS", "PostgreSQL", "MySQL", "MongoDB", "Redis", "AWS RDS"],
+            isTagCloud: true,
+        },
+        {
+            category: "Cloud, Networking & DevOps",
+            skills: [
+                "Docker",
+                "Kubernetes",
+                "Jenkins (CI/CD)",
+                "GitHub Actions",
+                "Maven",
+                "AWS (IAM, S3, SNS, SQS, Lambda, Route 53, CloudFront, CloudWatch)",
+                "Nginx",
+                "Apache Zookeeper",
+                "WebLogic",
+                "Tomcat",
+                "Webhooks",
+            ],
+            isTagCloud: true,
+        },
+        {
+            category: "Web Frameworks & Technologies",
+            skills: [
+                "Spring Boot",
+                "Spring Cloud",
+                "Spring Security",
+                "Hibernate",
+                "React.js",
+                "Next.js",
+                "Tailwind CSS",
+                "Shadcn/UI",
+                "Zod",
+                "TanStack Query",
+                "REST API",
+                "SOAP",
+                "Swagger",
+                "JSON",
+                "Protobuf",
+                "gRPC",
+            ],
+            isTagCloud: true,
+        },
+        {
+            category: "Load Testing & QA",
+            skills: ["Gatling", "Postman", "JUnit", "Cypress", "Playwright"],
+            isTagCloud: true,
+        },
+        {
+            category: "Machine Learning & AI",
+            skills: [
+                "TensorFlow",
+                "Keras",
+                "PyTorch",
+                "Scikit-Learn",
+                "XGBoost",
+                "CatBoost",
+                "LightGBM",
+                "Random Forest",
+                "Computer Vision (CNN, GAN, Visual Transformers for character recognition)",
+            ],
+            isTagCloud: true,
+        },
+        {
+            category: "Data Analysis & Visualization",
+            skills: ["Pandas", "NumPy", "Matplotlib", "Seaborn"],
+            isTagCloud: true,
+        },
+    ];
 
     const workExperience = {
         company: "Therap Services LLC",
-        description:
-            "5 years of Software Engineering experience and specialized in developing and managing complex projects, especially in healthcare and EVV (Electronic Visit Validation) systems. Built and maintained a B2B cursomer facing enterprise application. Worked in a team of 50+ members and led some core projects, delivering high-quality results. Strong experience in code review, cross-team development, mentoring, ensuring compliance with accessibility, and efficient project delivery using Scrum practices. I aim to build secure, reliable, scalable, and robust systems.",
+        description: `5+ years of Software Engineering experience and specialized in developing and managing complex projects, especially in healthcare
+         and EVV (Electronic Visit Validation) systems. Built and maintained a B2B cursomer facing enterprise application. Worked in a team of 50+ members 
+         and led some core projects, delivering high-quality results. Strong experience in code review, cross-team development, mentoring, ensuring
+          compliance with accessibility, and efficient project delivery using Scrum practices. I aim to build secure, reliable, scalable, and robust systems.`,
         roles: [
             {
                 title: "Software Engineer II",
@@ -91,19 +152,27 @@ const Skills = () => {
     const researchProjects = [
         {
             title: "Study of Spanning tree with Maximum number of leaves",
-            description: "Spanning Tree of a graph is a tree where all nodes are connected. A graph might have multiple spanning tree. A maximum leaves spanning tree (MLST) is a tree whose number of leaves is maximum. Finding MLST of a graph is a NP-hard problem. It is also APX-hard, which means it's approximation ratio is bounded by a constant. By finding the MLST of a network, we can find the backbone of the network, which can be used to refuce cost of the network. In this work, we tried to find an approximate algorithm for the MLST of a graph. We provide a heuristic algorithm following bottom-up approach.",
+            description: `Spanning Tree of a graph is a tree where all nodes are connected. A graph might have multiple spanning tree. A maximum leaves spanning tree (MLST) is a tree whose number of leaves is maximum. Finding MLST of a graph is a NP-hard problem. It is also APX-hard, which means it's approximation ratio is bounded by a constant. By finding the MLST of a network, we can find the backbone of the network, which can be used to refuce cost of the network. In this work, we tried to find an approximate algorithm for the MLST of a graph. We provide a heuristic algorithm following bottom-up approach.`,
         },
         {
             title: "Chakma Handwritten Characters recognition and Multipurpose Dataset",
-            description: "The Chakma language is a endangered language spoken by the Chakma people from Bangladesh. Not so many resources are available in Chakma language. Here we introduce a novel multilabel dataset for the Chakma language. The dataset contains 111,382 handwritten character images. We also introduce a novel data collection method and provide a baseline model and provide statistics, comparing with the state-of-the-art models. We provide a novel pipeline for handwritten character recognition. First we convert handwritten characters to font type images using GAN, then we use a Visual Transformer based model for classification.",
+            description: `The Chakma language is a endangered language spoken by the Chakma people from Bangladesh. Not so many resources are available in Chakma language.
+            Here we introduce a novel multilabel dataset for the Chakma language. The dataset contains 111,382 handwritten character images. We also introduce 
+            a novel data collection method and provide a baseline model and provide statistics, comparing with the state-of-the-art models. We provide a novel
+            pipeline for handwritten character recognition. First we convert handwritten characters to font type images using GAN, then we use a Visual
+            Transformer based model for classification.`,
         },
         {
             title: "Multilingual machine translation for Chakma",
-            description: "In this work we introduce a novel bilingual and monolingual corpus for the Chakma language. The dataset consists of 13,000 sentences, collected from various ources including online crowd sourcing. We then expriment with NMT and SMT.",
+            description: `In this work we introduce a novel bilingual and monolingual corpus for the Chakma language. The dataset consists of 13,000 sentences, collected from
+            various ources including online crowd sourcing. We then expriment with NMT and SMT.`,
         },
         {
             title: "Android malware detection",
-            description: "In this work we have curated a dataset from various sources. Then reverse engineered the APKs to for source code analysing using APKtool for decompiling. We made a code parser and extracted import, method invocation and parameter based features from the source code. Afterwords, recursive feature enimilation and PCA was used for feature reduction. Then we ran tree based models for classification of benign and malicious apps. We ran feature importance on the collected dataset and found that, method invocation based featuers are the most important features.",
+            description: `In this work we have curated a dataset from various sources. Then reverse engineered the APKs to for source code analysing using APKtool for
+            decompiling. We made a code parser and extracted import, method invocation and parameter based features from the source code. Afterwords,
+            recursive feature enimilation and PCA was used for feature reduction. Then we ran tree based models for classification of benign and
+            malicious apps. We ran feature importance on the collected dataset and found that, method invocation based featuers are the most important features.`,
         },
     ];
 
@@ -113,14 +182,27 @@ const Skills = () => {
             <section className="technical-skills">
                 <h2>Technical Skills</h2>
                 <div className="skills-grid">
-                    {Object.entries(technicalSkills).map(([category, skills]) => (
-                        <div key={category} className="skill-category">
+                    {technicalSkills.map(({ category, skills, isTagCloud }) => (
+                        <div
+                            key={category}
+                            className={`skill-category ${isTagCloud ? "tag-cloud-category" : "list-category"}`}
+                        >
                             <h3>{category}</h3>
-                            <ul>
-                                {skills.map((skill, index) => (
-                                    <li key={index}>{skill}</li>
-                                ))}
-                            </ul>
+                            {isTagCloud ? (
+                                <div className="skills-tags">
+                                    {skills.map((skill, index) => (
+                                        <span key={index} className="skill-tag">
+                                            {skill}
+                                        </span>
+                                    ))}
+                                </div>
+                            ) : (
+                                <ul>
+                                    {skills.map((skill, index) => (
+                                        <li key={index}>{skill}</li>
+                                    ))}
+                                </ul>
+                            )}
                         </div>
                     ))}
                 </div>
