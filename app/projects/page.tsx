@@ -256,6 +256,30 @@ const Projects = () => {
                     {personalProjects.map((project, index) => (
                         <div key={index} className="project-card">
                             <h3>{project.title}</h3>
+                            <div className="project-description">
+                                <p>{project.description}</p>
+                            </div>
+
+                            <div className="tech-stack">
+                                <h4>Tech Stack</h4>
+                                <div className="tags">
+                                    {project.techStack.map((tech, idx) => (
+                                        <span key={idx} className="tag">
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="features">
+                                <h4>Features</h4>
+                                <ul>
+                                    {project.features.map((feature, idx) => (
+                                        <li key={idx}>{feature}</li>
+                                    ))}
+                                </ul>
+                            </div>
+
                             {project.github ? (
                                 <a
                                     href={project.github}
@@ -275,29 +299,6 @@ const Projects = () => {
                                     Live Site
                                 </a>
                             )}
-                            <div className="project-description">
-                                <p>{project.description}</p>
-                            </div>
-
-                            <div className="tech-stack">
-                                <h4>Tech Stack</h4>
-                                <div className="tags">
-                                    {project.techStack.map((tech, idx) => (
-                                        <span key={idx} className="tag">
-                                            {tech}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <div className="features">
-                                <h4>Features</h4>
-                                <ul>
-                                    {project.features.map((feature, idx) => (
-                                        <li key={idx}>{feature}</li>
-                                    ))}
-                                </ul>
-                            </div>
                         </div>
                     ))}
                 </div>
@@ -309,9 +310,6 @@ const Projects = () => {
                     {academicProjects.map((project, index) => (
                         <div key={index} className="project-card">
                             <h3>{project.title}</h3>
-                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-link">
-                                View on GitHub
-                            </a>
                             <div className="project-description">
                                 <p>{project.description}</p>
                             </div>
@@ -335,6 +333,10 @@ const Projects = () => {
                                     ))}
                                 </ul>
                             </div>
+
+                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-link">
+                                View on GitHub
+                            </a>
                         </div>
                     ))}
                 </div>
