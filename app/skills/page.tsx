@@ -4,33 +4,36 @@ import "@/src/styles/Skills.css";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Skills | Aditya::Portfolio',
-  description: 'Technical skills and work experience of Aditya Chakma, Software Engineer II at Therap Services LLC.',
+    title: 'Skills | Aditya::Portfolio',
+    description: 'Technical skills and work experience of Aditya Chakma, Software Engineer II at Therap Services LLC.',
 };
 
 const Skills = () => {
     const technicalSkills = {
-        "Programming languages": ["Java , Go, C++ , C# ", "Python , Javascript , R , Matlab "],
-        Database: ["Oracle DBMS, PostgreSQL, MySql", "MongoDB"],
-        "Cloud & Dev-Ops": [
-            "Nginx, Weblogic, Tomcat, Docker, Apache Zookeeper, Jenkins (CI/CD)",
-            "AWS (IAM, S3, SNS, SQS, Lambda, etc.)",
+        "Programming languages": ["Java, Go, C++, TypeScript", "Python, Javascript, SQL, C#"],
+        "Agentic AI & Automation": [
+            "Autonomous Development Workflows (/plan, /design, /implement, /test, /review)",
+            "AI Agent Persona Orchestration (Product Manager, Architect, Senior Dev, SDET, Security Auditor)",
+            "Context-aware planning, HITL (Human-in-the-Loop) guardrails, validation checklists"
         ],
-        "Project Management": ["Jira, Trello, Slack"],
-        "Web Frameworks and technologies": [
-            "Spring boot, Spring MVC, Spring Cloud",
-            "React.js, Next.js, JSP, JSF, Primefaces, Thymeleaf, XHTML, HTML, CSS",
-            "Hibernate, Java EE/ Jakarta EE",
-            "REST API, SOAP, Sweager",
-            "JSON, Protobuf",
+        Database: ["Oracle DBMS, PostgreSQL, MySQL", "MongoDB, Redis, AWS RDS"],
+        "Cloud, Networking & DevOps": [
+            "Docker, Kubernetes, Jenkins (CI/CD), GitHub Actions, Maven",
+            "AWS (IAM, S3, SNS, SQS, Lambda, Route 53, CloudFront, CloudWatch)",
+            "Nginx, Apache Zookeeper, WebLogic, Tomcat, Webhooks"
         ],
-        "Load Testing": ["Gatling, Postman, JUnit", "Cypress, Playwright"],
-        "Machine Learning frameworks": [
-            "Tensorflow 2.0, Keras, Pytorch",
-            "XGBoost, Sklearn, CatBoost, Light GBM, Random Forest",
-            "Sklearn linear models",
+        "Web Frameworks & Technologies": [
+            "Spring Boot, Spring Cloud, Spring Security, Hibernate",
+            "React.js, Next.js, Tailwind CSS, Shadcn/UI, Zod, TanStack Query",
+            "REST API, SOAP, Swagger, JSON, Protobuf, gRPC"
         ],
-        "Data analysis": ["Pandas, Matplotlib, Sklearn, Seaborn"],
+        "Load Testing & QA": ["Gatling, Postman, JUnit", "Cypress, Playwright"],
+        "Machine Learning & AI": [
+            "TensorFlow, Keras, PyTorch, Scikit-Learn",
+            "XGBoost, CatBoost, LightGBM, Random Forest",
+            "Computer Vision (CNN, GAN, Visual Transformers for character recognition)"
+        ],
+        "Data Analysis & Visualization": ["Pandas, NumPy, Matplotlib, Seaborn"]
     };
 
     const workExperience = {
@@ -46,6 +49,8 @@ const Skills = () => {
                     "Worked on a team of 50+ members and maintained core system functionalities, including login, EVV (Electronic Visit Validation), Scheduling (Google calendar-like), and Secure messaging (Gmail-like secure messaging feature).",
                     "Architected and developed Webhook for Therap's aggregator application, enabling system-to-system communication with Therap suite efficiently and improving data integration",
                     "Mentored junior developers in multiple projects and participated in multiple tech-sessions.",
+                    "Integrated AI-assisted coding and agentic development workflows into the team's software lifecycle, utilizing custom agent models for automated code drafting, test suite generation, and security reviews, leading to a 35% increase in feature delivery velocity.",
+                    "Established custom LLM prompt engineering guidelines and architectural context syncing rules, ensuring AI-generated solutions conform strictly to internal styling, TypeScript standards, and DRY principles.",
                     "Load tested API's using Gatling and Postman and optimized endpoints improving performance by a factor of 10x to handle over thousands of requests per second.",
                     "Designed a UUID and client secret generator for Therap applicaitons in distributed environment.",
                     "Optimized the most frequent cron-jobs and reduced DB QPS for high traffic features by leveraging Oracle coherence, query optimization, and intelligent indexing, achieving 25x more throughput and 20% reduction in latency",

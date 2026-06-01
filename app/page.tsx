@@ -4,13 +4,13 @@ import "@/src/styles/Home.css";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Aditya::Portfolio',
-  description: 'Aditya Chakma - Software Engineer with 5 years of experience building scalable, reliable and secure microservices using Java.',
-  openGraph: {
     title: 'Aditya::Portfolio',
-    description: 'Software Engineer with 5 years of experience in Java, Go, and Microservices.',
-    images: ['/assets/images/Aditya.jpg'],
-  },
+    description: 'Aditya Chakma - Full-Stack Engineer with 5+ years of experience specializing in systems, DevOps, and agentic AI workflows.',
+    openGraph: {
+        title: 'Aditya::Portfolio',
+        description: 'Full-Stack Engineer with 5+ years of experience in systems, DevOps, and agentic AI workflows.',
+        images: ['/assets/images/Aditya.jpg'],
+    },
 };
 
 const Home = () => {
@@ -24,21 +24,22 @@ const Home = () => {
                     </h1>
                     <div className="introduction" style={{ textAlign: "justify" }}>
                         <p>
-                            I am Aditya. I am a Software Engineer with 5 years of experience building scalable, reliable
-                            and secure microservices using Java.
+                            I am Aditya. I am a Full-Stack Engineer specializing in systems, DevOps, and agentic AI workflows,
+                            with over 5+ years of experience building scalable, reliable, and secure microservices and applications.
                         </p>
 
                         <p>
-                            During my tenure, I have led multiple system-critical projects and integrated various
-                            third-party services, while also developing highly secure systems for protected health
-                            information (PHI) data. In my work, I have optimized system performance by reduced DB QPS,
-                            reducing latency, and increasing system throughput.
+                            During my tenure, I have designed high-throughput architectures, established CI/CD pipelines, containerized
+                            complex microservices, and designed secure communication flows. I have led multiple system-critical projects,
+                            integrated diverse cloud services, and implemented highly secure systems for HIPAA-compliant PHI data. By optimizing
+                            database performance, DB QPS, query indexes, and caching strategies, I have achieved massive latency reductions
+                            and maximized system throughput.
                         </p>
 
                         <p>
-                            Additionally, I have actively participated in cross-team collaborations, conducted pull
-                            request reviews, ensured timely project delivery, and mentored junior developers to foster
-                            their skill growth.
+                            Furthermore, I specialize in Agentic AI systems—building autonomous, multi-agent orchestrations and development workflows
+                            that streamline code generation, testing, security audits, and lifecycle management while maintaining strict safety,
+                            autonomy, and human-in-the-loop controls.
                         </p>
                     </div>
                 </div>
@@ -51,12 +52,14 @@ const Home = () => {
                     <div className="profile-highlights">
                         <h2>Profile Highlights</h2>
                         <ul>
-                            <li>Java, Go, C++</li>
-                            <li>Spring Boot, Spring Cloud, Spring Security</li>
-                            <li>Oracl DBMS, MySql, PostgreSQL, MongoDB</li>
-                            <li>Docker, Kubernetes</li>
-                            <li>AWS IAM, S3, SNS, SQS, Lambda</li>
-                            <li>Kafka, JMS, RabbitMQ, Redis</li>
+                            <li>Java, Go, TypeScript, Python</li>
+                            <li>Spring Boot, Spring Cloud, Next.js, React</li>
+                            <li>Agentic AI Systems & LLM Orchestration</li>
+                            <li>DevOps & CI/CD: Docker, Kubernetes, Jenkins</li>
+                            <li>Networking: Nginx, WebLogic, Tomcat, CloudFront</li>
+                            <li>AWS: IAM, S3, SNS, SQS, RDS, CloudWatch</li>
+                            <li>Oracle, PostgreSQL, MySQL, MongoDB, Redis</li>
+                            <li>Kafka, JMS, RabbitMQ, Webhooks</li>
                         </ul>
                     </div>
                 </div>
