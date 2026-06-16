@@ -5,7 +5,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Skills | Aditya::Portfolio",
-    description: "Technical skills and work experience of Aditya Chakma, Senior Software Engineer at Therap Services LLC.",
+    description:
+        "Technical skills and work experience of Aditya Chakma, Senior Software Engineer at Therap Services LLC.",
 };
 
 const Skills = () => {
@@ -116,14 +117,13 @@ const Skills = () => {
                 title: "Software Engineer II",
                 period: "April 2024 - March 2026",
                 achievements: [
-                    "Developed and maintained a large-scale customer-facing B2B SaaS application (therapservices.net) with 20+ state contracts. The application has 40,000+ Daily CCU (Concurrent Users) and serves over 1,000,000+ individuals.",
                     "Worked in a team of 50+ members to maintain core system functionalities, including login, EVV (Electronic Visit Validation), Scheduling (Google Calendar-like), and Secure Messaging (Gmail-like secure messaging feature).",
                     "Architected and developed Webhook for Therap's aggregator application, enabling system-to-system communication with Therap suite efficiently and improving data integration.",
                     "Re-engineered high-volume cron jobs and data access patterns using Oracle Coherence, advanced query optimization, and intelligent indexing, reducing database QPS and achieving a 20% reduction in latency.",
                     "Load-tested API endpoints with Gatling and JMeter, identified a bottleneck in the legacy UUID generator, and replaced it with Twitter's Snowflake UUID, achieving 5x insert/update operations per second.",
                     "Dockerized multiple legacy services, including the authentication server, and developed a single-click deployment tool, streamlining DEV and QA deployment, cutting deployment time by 50%, and reducing developer hardware requirements by 33%.",
                     "Designed data-integration pipeline and fully automated manual workflows for data integration (SFTP and REST APIs), enabling Therap to secure Kentucky state project.",
-                    "Rearchitected data import pipeline, enabling 100x faster processing and improved latency for large imports (150K+ rows) by using queue and batching techniques.",
+                    "Rearchitected data import pipeline, enabling 20x faster processing and improved latency for large imports (150K+ rows) by using queue and batching techniques.",
                     "Mentored junior developers in multiple projects and participated in multiple tech-sessions.",
                 ],
             },
@@ -134,7 +134,7 @@ const Skills = () => {
                     "Integrated Salesforce and MaestroQA APIs into the Therap system to enable real-time synchronization of client data, automated QA reporting, and Live Chat, streamlining customer support workflows and reducing manual intervention by up to 80%.",
                     "Contributed to implementing an in-house authentication module, RBAC, and ABAC using Spring Security featuring MFA, OAuth2, JWT, IP whitelisting, rate-limiting, CAPTCHA, etc., replacing third-party IDPs and reducing authentication-related operational costs to zero.",
                     "Worked on HIPAA-compliant healthcare projects handling PHI data. Delivered state-specific solutions for Kentucky and Tennessee, implemented rollup-dashboard, and contributed to meeting the 21st Century Cures Act mandated by the Federal Government of the USA, which helped Therap to secure multi-million dollar state contracts.",
-                    "Developed data-feed and dashboard for high-traffic, high-volume data, processing over 1 million records per day using Spring Batch, JDBC Template, and Redis with asynchronous processing, multithreading, and caching for data-driven decision-making, reporting, and compliance monitoring, enabling real-time insights.",
+                    "Develop data-feed and dashboard for high-traffic, high-volume data, processing over 1 million records per day using Spring Batch, JDBC Template, and Redis with asynchronous processing, multithreading, and caching for data-driven decision-making, reporting, and compliance monitoring, enabling real-time insights.",
                     "Architected and redesigned third-party API endpoints, reducing API calls overhead by 50%. Developed several RESTful APIs for multiple existing modules to support cross-platform development, including mobile platforms and IoT.",
                     "Optimized the most frequent database queries for cron jobs, improving throughput by up to 5x.",
                     "Involved in development and QA-side server deployment using Weblogic, Nginx, Tomcat ensuring high performance and stability.",
@@ -144,6 +144,7 @@ const Skills = () => {
                 title: "Associate Software Engineer",
                 period: "March 2021 - March 2022",
                 achievements: [
+                    "Developed and maintained a large-scale customer-facing B2B SaaS application (therapservices.net) with 20+ state contracts. The application has 40,000+ Daily CCU (Concurrent Users) and serves over 1,000,000+ individuals.",
                     "Developed and maintained several state projects and contributed to core modules, including Therap's T-log with millions of forms submitted every week.",
                     "Optimized on-demand loading of resources across the system, cached static resources, and integrated CDNs, reducing network bandwidth by 20% and improving page load time with overall responsiveness.",
                     "Fixed bugs for existing APIs and developed RESTful APIs for third-party consumers.",
