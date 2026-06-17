@@ -24,23 +24,24 @@ const Home = () => {
                     </h1>
                     <div className="introduction" style={{ textAlign: "justify" }}>
                         <p>
-                            I am Aditya. I am a Full-Stack Engineer specializing in systems, DevOps, and agentic AI workflows,
-                            with over 5+ years of experience building scalable, reliable, and secure microservices and applications.
+                            I am Aditya, a <strong>Full-Stack Engineer</strong> specializing in systems, DevOps, and agentic AI workflows,
+                            with over <strong>5+ years of experience</strong> building scalable, reliable, and secure microservices and applications.
                         </p>
 
-                        <p>
-                            During my tenure, I have designed high-throughput architectures, established CI/CD pipelines, containerized
-                            complex microservices, and designed secure communication flows. I have led multiple system-critical projects,
-                            integrated diverse cloud services, and implemented highly secure systems for HIPAA-compliant PHI data. By optimizing
-                            database performance, DB QPS, query indexes, and caching strategies, I have achieved massive latency reductions
-                            and maximized system throughput.
-                        </p>
-
-                        <p>
-                            Furthermore, I specialize in Agentic AI systems—building autonomous, multi-agent orchestrations and development workflows
-                            that streamline code generation, testing, security audits, and lifecycle management while maintaining strict safety,
-                            autonomy, and human-in-the-loop controls.
-                        </p>
+                        <ul style={{ paddingLeft: "20px", marginTop: "15px", display: "flex", flexDirection: "column", gap: "10px" }}>
+                            <li>
+                                <strong>Architecture & DevOps:</strong> Designed high-throughput architectures, established CI/CD pipelines, containerized complex microservices, and designed secure communication flows.
+                            </li>
+                            <li>
+                                <strong>Leadership & Compliance:</strong> Led multiple system-critical projects, integrated diverse cloud services, and implemented highly secure systems for HIPAA-compliant PHI data.
+                            </li>
+                            <li>
+                                <strong>Performance Optimization:</strong> By optimizing database performance, DB QPS, query indexes, and caching strategies, I have achieved massive latency reductions and maximized system throughput.
+                            </li>
+                            <li>
+                                <strong>Agentic AI Systems:</strong> I specialize in building autonomous, multi-agent orchestrations and development workflows that streamline code generation, testing, security audits, and lifecycle management while maintaining strict safety, autonomy, and human-in-the-loop controls.
+                            </li>
+                        </ul>
                     </div>
                 </div>
 

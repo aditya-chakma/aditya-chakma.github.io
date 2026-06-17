@@ -59,27 +59,6 @@ export default function CertificationsPage() {
                 <h2>Certifications & Achievements</h2>
 
                 <div className="achievement-category">
-                    <h3>BDMO (Bangladesh Mathematics Olympiad)</h3>
-                    <div className="certificate-grid">
-                        {bdmoImages.map((image, index) => (
-                            <div key={index} className="certificate-card" onClick={() => setSelectedImage(image.src)}>
-                                <img src={image.src} alt={image.alt} className="certificate-thumbnail" />
-                                <p className="certificate-year">{image.year}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="achievement-category">
-                    <h3>Perfect Attendance Certificate</h3>
-                    <div className="certificate-grid">
-                        <div className="certificate-card" onClick={() => setSelectedImage(perfect_attendance)}>
-                            <img src={perfect_attendance} className="certificate-thumbnail" />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="achievement-category">
                     <h3>Competitions (Selective)</h3>
                     <div className="competitions-list">
                         {competitions.map((competition, index) => (
@@ -99,6 +78,27 @@ export default function CertificationsPage() {
                                 <p className="certificate-title">{cert.title}</p>
                             </div>
                         ))}
+                    </div>
+                </div>
+
+                <div className="achievement-category">
+                    <h3>BDMO (Bangladesh Mathematics Olympiad)</h3>
+                    <div className="certificate-grid">
+                        {bdmoImages.map((image, index) => (
+                            <div key={index} className="certificate-card" onClick={() => setSelectedImage(image.src)}>
+                                <img src={image.src} alt={image.alt} className="certificate-thumbnail" />
+                                <p className="certificate-year">{image.year}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="achievement-category">
+                    <h3>Perfect Attendance Certificate</h3>
+                    <div className="certificate-grid">
+                        <div className="certificate-card" onClick={() => setSelectedImage(perfect_attendance)}>
+                            <img src={perfect_attendance} className="certificate-thumbnail" />
+                        </div>
                     </div>
                 </div>
             </section>

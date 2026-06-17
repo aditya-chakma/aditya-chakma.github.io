@@ -39,11 +39,6 @@ const Skills = () => {
             isTagCloud: true,
         },
         {
-            category: "Databases & Caching",
-            skills: ["Oracle DBMS", "PostgreSQL", "MySQL", "MongoDB", "Redis", "AWS RDS"],
-            isTagCloud: true,
-        },
-        {
             category: "Cloud, DevOps & Infrastructure",
             skills: [
                 "AWS (IAM, EC2, S3, Lambda, RDS, SNS, SQS, App Runner, CloudFront, CloudWatch, Route 53)",
@@ -60,16 +55,6 @@ const Skills = () => {
             isTagCloud: true,
         },
         {
-            category: "Data Streaming & Middleware",
-            skills: ["Apache Kafka", "JMS", "Redis", "Webhooks"],
-            isTagCloud: true,
-        },
-        {
-            category: "Testing & Tools",
-            skills: ["JUnit", "Cypress", "Playwright", "Gatling", "Postman", "Linux", "Git"],
-            isTagCloud: true,
-        },
-        {
             category: "Agentic AI & Automation",
             skills: [
                 "Autonomous Development Workflows (/plan, /design, /implement, /test, /review)",
@@ -77,6 +62,16 @@ const Skills = () => {
                 "Context-aware planning, HITL (Human-in-the-Loop) guardrails, validation checklists",
             ],
             isTagCloud: false,
+        },
+        {
+            category: "Databases & Caching",
+            skills: ["Oracle DBMS", "PostgreSQL", "MySQL", "MongoDB", "Redis", "AWS RDS"],
+            isTagCloud: true,
+        },
+        {
+            category: "Data Streaming & Middleware",
+            skills: ["Apache Kafka", "JMS", "Redis", "Webhooks"],
+            isTagCloud: true,
         },
         {
             category: "Machine Learning & AI",
@@ -91,6 +86,11 @@ const Skills = () => {
                 "Random Forest",
                 "Computer Vision (CNN, GAN, Visual Transformers for character recognition)",
             ],
+            isTagCloud: true,
+        },
+        {
+            category: "Testing & Tools",
+            skills: ["JUnit", "Cypress", "Playwright", "Gatling", "Postman", "Linux", "Git"],
             isTagCloud: true,
         },
         {
@@ -184,6 +184,30 @@ const Skills = () => {
     return (
         <div className="skills-page">
             <ContactBar />
+            
+            <section className="work-experience">
+                <h2>Work Experience</h2>
+                <div className="company-info">
+                    <h3>{workExperience.company}</h3>
+                    <p className="company-description">{workExperience.description}</p>
+                </div>
+                <div className="experience-timeline">
+                    {workExperience.roles.map((role, index) => (
+                        <div key={index} className="role-card">
+                            <div className="role-header">
+                                <h4>{role.title}</h4>
+                                <span className="period">{role.period}</span>
+                            </div>
+                            <ul className="achievements">
+                                {role.achievements.map((achievement, idx) => (
+                                    <li key={idx}>{achievement}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
             <section className="technical-skills">
                 <h2>Technical Skills</h2>
                 <div className="skills-grid">
@@ -208,29 +232,6 @@ const Skills = () => {
                                     ))}
                                 </ul>
                             )}
-                        </div>
-                    ))}
-                </div>
-            </section>
-
-            <section className="work-experience">
-                <h2>Work Experience</h2>
-                <div className="company-info">
-                    <h3>{workExperience.company}</h3>
-                    <p className="company-description">{workExperience.description}</p>
-                </div>
-                <div className="experience-timeline">
-                    {workExperience.roles.map((role, index) => (
-                        <div key={index} className="role-card">
-                            <div className="role-header">
-                                <h4>{role.title}</h4>
-                                <span className="period">{role.period}</span>
-                            </div>
-                            <ul className="achievements">
-                                {role.achievements.map((achievement, idx) => (
-                                    <li key={idx}>{achievement}</li>
-                                ))}
-                            </ul>
                         </div>
                     ))}
                 </div>
