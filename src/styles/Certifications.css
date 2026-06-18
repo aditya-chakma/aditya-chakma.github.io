@@ -266,3 +266,36 @@
     height: 180px;
   }
 }
+
+/* Skeleton Placeholder Styles */
+.cert-skeleton-card {
+  cursor: default !important;
+  pointer-events: none;
+}
+
+.skeleton-media {
+  height: 160px;
+  background-color: var(--bg-secondary);
+}
+
+.skeleton-text {
+  background-color: var(--bg-secondary);
+  border-radius: 4px;
+}
+
+.skeleton-pulse {
+  animation: pulse-placeholder 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse-placeholder {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+    background-color: var(--border-color);
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
