@@ -20,7 +20,7 @@ const ContactBar = () => {
             </a>
 
             <a href="/Aditya_Chakma_IELTS.pdf" target="_blank" rel="noopener noreferrer" className="contact-pill ielts-pill">
-                <img src="/assets/icons/toefl.png" alt="IELTS score" /> IELTS (8.0)
+                <img src="/assets/icons/toefl.png" alt="IELTS score" /> IELTS (7.0)
             </a>
         </div>
     );

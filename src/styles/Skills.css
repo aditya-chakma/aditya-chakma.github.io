@@ -38,6 +38,18 @@
   margin-bottom: 0.5rem;
 }
 
+.company-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+.company-link:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
 .company-summary {
   font-size: 0.95rem;
   color: var(--text-secondary);
@@ -210,9 +222,13 @@
 }
 
 /* RESEARCH SECTION */
-.research-list-container {
-  display: flex;
-  flex-direction: column;
+.research-section-fullwidth {
+  width: 100%;
+}
+
+.research-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 

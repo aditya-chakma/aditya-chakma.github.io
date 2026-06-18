@@ -15,6 +15,7 @@ export interface WorkExperience {
     company: string;
     description: string;
     roles: Role[];
+    liveUrl?: string;
 }
 
 export interface ResearchProject {
@@ -133,6 +134,7 @@ export const technicalSkills: SkillCategory[] = [
 // 2. Work Experience Data
 export const workExperience: WorkExperience = {
     company: "Therap Services LLC",
+    liveUrl: "https://www.therapservices.net/",
     description: `Around 5.5 years of Software Engineering experience, specialized in developing and managing complex enterprise systems. Led core projects, delivering high-quality, high-throughput systems. Strong expertise in code review, cross-team collaboration, mentoring, and automation in an agile environment using Scrum practices. Focused on building highly secure, reliable, scalable, and robust systems compliant with strict US federal guidelines.`,
     roles: [
         {

@@ -23,7 +23,15 @@ export default function SkillsSection() {
                         <h3 className="sub-section-title">Professional Experience</h3>
 
                         <div className="company-info-card">
-                            <h4 className="company-name">{workExperience.company}</h4>
+                            <h4 className="company-name">
+                                {workExperience.liveUrl ? (
+                                    <a href={workExperience.liveUrl} target="_blank" rel="noopener noreferrer" className="company-link">
+                                        {workExperience.company} 🔗
+                                    </a>
+                                ) : (
+                                    workExperience.company
+                                )}
+                            </h4>
                             <p className="company-summary">{workExperience.description}</p>
                         </div>
 
@@ -69,17 +77,19 @@ export default function SkillsSection() {
                                 </div>
                             ))}
                         </div>
+                    </div>
+                </div>
 
-                        {/* Research Projects Sub-column */}
-                        <h3 className="sub-section-title" style={{ marginTop: '3.5rem' }}>Research & Publications</h3>
-                        <div className="research-list-container">
-                            {researchProjects.map((research, index) => (
-                                <div key={index} className="research-item-card">
-                                    <h4>{research.title}</h4>
-                                    <p>{research.description}</p>
-                                </div>
-                            ))}
-                        </div>
+                {/* Research Projects Section - Now Full Width Below */}
+                <div className="research-section-fullwidth">
+                    <h3 className="sub-section-title" style={{ marginTop: '3.5rem' }}>Research & Publications</h3>
+                    <div className="research-grid-container">
+                        {researchProjects.map((research, index) => (
+                            <div key={index} className="research-item-card">
+                                <h4>{research.title}</h4>
+                                <p>{research.description}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

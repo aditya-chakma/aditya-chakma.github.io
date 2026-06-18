@@ -8,10 +8,8 @@ export default function EducationSection() {
                 <div className="education-timeline-grid">
                     {education.map((edu, index) => (
                         <div key={index} className="education-card-box">
-                            <div className="edu-header">
-                                <h3>{edu.degree}</h3>
-                                <span className="edu-period">{edu.period}</span>
-                            </div>
+                            <span className="edu-period">{edu.period}</span>
+                            <h3 className="edu-degree">{edu.degree}</h3>
                             <p className="edu-institution">{edu.institution}</p>
                             {edu.cgpa && <div className="edu-cgpa">CGPA: <strong>{edu.cgpa}</strong></div>}
 

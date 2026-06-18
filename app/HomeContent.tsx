@@ -1,7 +1,7 @@
 'use client';
-import React, { useState } from "react";
-import dynamic from "next/dynamic";
 import HeroSection from "@/src/components/HeroSection"; // Static import as it is above-the-fold
+import dynamic from "next/dynamic";
+import { useState } from "react";
 
 // Dynamically import below-the-fold components to code-split and defer JavaScript loading
 const SkillsSection = dynamic(() => import("@/src/components/SkillsSection"));
@@ -12,12 +12,12 @@ const ContactSection = dynamic(() => import("@/src/components/ContactSection"));
 const ImageModal = dynamic(() => import("@/src/components/ImageModal"), { ssr: false });
 
 // Stylesheets
-import "@/src/styles/Home.css";
-import "@/src/styles/Skills.css";
-import "@/src/styles/Projects.css";
-import "@/src/styles/Education.css";
 import "@/src/styles/Certifications.css";
 import "@/src/styles/Contact.css";
+import "@/src/styles/Education.css";
+import "@/src/styles/Home.css";
+import "@/src/styles/Projects.css";
+import "@/src/styles/Skills.css";
 
 export default function HomeContent() {
     // State for Certifications Image Modal

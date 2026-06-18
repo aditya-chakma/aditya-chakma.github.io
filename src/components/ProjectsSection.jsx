@@ -12,7 +12,6 @@ export default function ProjectsSection() {
                         <span className="callout-icon">🤖</span>
                         <div>
                             <h3>Agentic Coding and Agentic SDLC Automation</h3>
-                            <p>Pioneering context-aware multi-agent development pipelines in professional software workflows.</p>
                         </div>
                     </div>
                     <div className="ai-agentic-grid">

@@ -63,7 +63,6 @@ export default function CertificationsSection({ onSelectImage }) {
                         </ul>
 
                         <h3 style={{ marginTop: '2.5rem' }}>BDMO (Bangladesh Mathematics Olympiad)</h3>
-                        <p className="bdmo-intro-text">Selected and awarded certificates in BDMO state levels. Click thumbnails to inspect high-resolution credentials:</p>
 
                         <div className="bdmo-thumbnails-row">
                             {hasRendered ? (
@@ -97,8 +96,7 @@ export default function CertificationsSection({ onSelectImage }) {
                 </div>
 
                 {/* Online Certifications */}
-                <h3 className="section-sub-header" style={{ marginTop: '4rem' }}>Professional & Deep Learning Credentials</h3>
-                <p className="cert-intro-text">Interactive certification list with image validations. Click any card to preview the full verified credential:</p>
+                <h3 className="section-sub-header" style={{ marginTop: '4rem' }}>Certifications</h3>
 
                 <div className="certifications-matrix-grid">
                     {hasRendered ? (

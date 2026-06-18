@@ -28,7 +28,6 @@ export default function ContactSection() {
         <section id="contact" className="section-contact">
             <div className="section-container">
                 <h2 className="section-title">Get in Touch</h2>
-                <p className="contact-subtitle">Have a project, job opening, or opportunity? Drop a secure message directly using the mailto: constructor below.</p>
 
                 <div className="contact-form-layout">
                     <form onSubmit={handleFormSubmit} className="interactive-email-form">

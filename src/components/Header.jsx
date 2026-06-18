@@ -84,7 +84,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav-container">
         <Link href="/#home" className="logo" onClick={(e) => handleLinkClick(e, 'home')}>
-          Aditya<span>::</span>Portfolio
+          Aditya Chakma
         </Link>
 
         <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>

@@ -5,7 +5,7 @@ import Footer from '@/src/components/Footer';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://aditya-chakma.github.io'),
-  title: 'Aditya::Portfolio',
+  title: 'Portfolio',
   description: 'Personal portfolio of Aditya Chakma',
 };
 
