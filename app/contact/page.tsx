@@ -1,11 +1,11 @@
-import ContactContent from './ContactContent';
-import type { Metadata } from 'next';
+'use client';
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
-export const metadata: Metadata = {
-  title: 'Contact | Aditya::Portfolio',
-  description: 'Get in touch with Aditya Chakma for collaborations or inquiries.',
-};
-
-export default function ContactPage() {
-  return <ContactContent />;
+export default function RedirectPage() {
+    const router = useRouter();
+    useEffect(() => {
+        router.replace('/#contact');
+    }, [router]);
+    return <div style={{ minHeight: '100vh', backgroundColor: '#ffffff' }} />;
 }

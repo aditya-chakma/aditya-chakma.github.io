@@ -1,135 +1,268 @@
-.certifications-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+/* CERTIFICATIONS SECTION STYLES */
+.section-certifications {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
 }
 
-.certifications-section h2 {
-  font-size: 2.5rem;
-  color: #2c3e50;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.achievement-category {
-  margin-bottom: 4rem;
-}
-
-.achievement-category h3 {
-  font-size: 1.8rem;
-  color: #3498db;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #3498db;
-}
-
-.certificate-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.certificate-card {
-  background: white;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-}
-
-.certificate-card:hover {
-  transform: translateY(-5px);
-}
-
-.certificate-thumbnail {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
+.section-sub-header {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
-.certificate-year {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #2c3e50;
-  font-weight: 500;
+.cert-intro-text, .bdmo-intro-text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
 }
 
-.certificate-title {
-  text-align: center;
-  font-size: 1rem;
-  color: #2c3e50;
-  font-weight: 500;
-  line-height: 1.4;
-  margin: 0;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Olympiad & Attendance Layout */
+.competitions-achievements-row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
 }
 
-.competitions-list {
+.comp-col h3, .perfect-att-col h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.comp-list {
+  list-style: none;
+  padding-left: 0;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  gap: 0.75rem;
 }
 
-.competition-item {
-  padding: 1rem 1.5rem;
-  background: #f8f9fa;
-  border-radius: 8px;
-  color: #2c3e50;
+.comp-item {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  padding: 1rem 1.25rem;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.comp-item:hover {
+  transform: translateX(6px);
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.bullet-star {
+  color: #f59e0b; /* amber-500 */
   font-size: 1.1rem;
-  transition: all 0.3s ease;
 }
 
-.competition-item:hover {
-  background: #e9ecef;
-  transform: translateX(10px);
+/* BDMO Thumbnails */
+.bdmo-thumbnails-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-@media (max-width: 768px) {
-  .certifications-page {
-    padding: 1rem;
-  }
+.bdmo-thumb-card {
+  position: relative;
+  width: 100px;
+  height: 75px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
 
-  .certifications-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
+.bdmo-thumb-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  .achievement-category {
-    margin-bottom: 3rem;
-  }
+.bdmo-thumb-card span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(15, 23, 42, 0.75);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.15rem 0;
+}
 
-  .achievement-category h3 {
-    font-size: 1.5rem;
-  }
+.bdmo-thumb-card:hover {
+  transform: scale(1.05);
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow-md);
+}
 
-  .certificate-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-  }
+/* Perfect Attendance */
+.perfect-att-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
 
-  .certificate-thumbnail {
-    height: 150px;
-  }
+.attendance-thumb-card {
+  position: relative;
+  max-width: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  .certificate-year,
-  .certificate-title {
-    font-size: 0.9rem;
-  }
+.attendance-thumb-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
 
-  .competition-item {
-    font-size: 1rem;
-    padding: 0.8rem 1.2rem;
+.overlay-click {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(99, 102, 241, 0.85); /* indigo-500 with opacity */
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.attendance-thumb-card:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent-color);
+}
+
+.attendance-thumb-card:hover .overlay-click {
+  opacity: 1;
+}
+
+/* CERTIFICATIONS MATRIX GRID */
+.certifications-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.cert-interactive-card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cert-card-media {
+  position: relative;
+  height: 160px;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cert-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-hover-mask {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.view-text {
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid white;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  background-color: rgba(15, 23, 42, 0.2);
+}
+
+.cert-card-info {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex-grow: 1;
+}
+
+.cert-card-info h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.cert-issuer {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.cert-interactive-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-color);
+}
+
+.cert-interactive-card:hover .card-hover-mask {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .competitions-achievements-row {
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
-} 
+  
+  .attendance-thumb-card {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .certifications-matrix-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .attendance-thumb-card img {
+    height: 180px;
+  }
+}

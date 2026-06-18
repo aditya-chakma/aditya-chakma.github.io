@@ -1,303 +1,261 @@
-.skills-page {
-  padding: 40px 20px;
-  max-width: 1400px;
-  margin: 0 auto;
-  min-height: 100vh;
+/* EXPERIENCE & SKILLS SECTION */
+.section-experience {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
 }
 
-.technical-skills,
-.work-experience,
-.research-experience {
-  background-color: white;
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  margin-bottom: 2rem;
-}
-
-.technical-skills h2,
-.work-experience h2,
-.research-experience h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.skills-grid {
+.experience-skills-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
 }
 
-.skill-category {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 16px;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.sub-section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  letter-spacing: -0.015em;
+  position: relative;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+/* LEFT COLUMN - WORK EXPERIENCE */
+.company-info-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.company-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.company-summary {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Vertical Timeline */
+.timeline-container {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--border-color);
   display: flex;
   flex-direction: column;
+  gap: 2.5rem;
+}
+
+.role-timeline-card {
   position: relative;
-  overflow: hidden;
 }
 
-.skill-category::before {
-  content: "";
+.role-timeline-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.title-dot {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 4px;
-  background: linear-gradient(180deg, #3b82f6 0%, #8b5cf6 100%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  left: -23px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  border: 3px solid var(--bg-primary);
+  box-shadow: 0 0 0 2px var(--border-color);
+  transition: background-color 0.2s ease;
 }
 
-.skill-category:hover::before {
-  opacity: 1;
+.role-timeline-card:hover .title-dot {
+  background-color: var(--accent-hover);
 }
 
-.skill-category:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
-  border-color: rgba(59, 130, 246, 0.3);
-}
-
-.skill-category h3 {
-  color: #2c3e50;
-  font-size: 1.3rem;
+.role-title {
+  font-size: 1.2rem;
   font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 2px solid #3498db;
+  color: var(--text-primary);
 }
 
-.skill-category ul {
+.role-period {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  background-color: var(--accent-light);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+.role-bullet-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-.skill-category li {
-  margin-bottom: 0.8rem;
-  color: #444;
-  line-height: 1.4;
+.role-bullet-list li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
   position: relative;
-  padding-left: 1.2rem;
+  padding-left: 1.25rem;
 }
 
-.skill-category li::before {
-  content: "•";
-  color: #3498db;
+.role-bullet-list li::before {
+  content: '→';
   position: absolute;
   left: 0;
-  font-size: 1.2em;
+  color: var(--accent-color);
+  font-weight: bold;
 }
 
-/* Skills tag cloud */
-.skills-tags {
+.role-bullet-list li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* RIGHT COLUMN - TECHNICAL EXPERTISE */
+.skills-bento-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.skills-category-card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skills-category-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-color);
+}
+
+.skills-category-card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-color);
+}
+
+.skills-badge-cloud {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.skill-tag {
-  background: #f8fafc;
-  color: #475569;
+.skill-badge {
   font-size: 0.825rem;
   font-weight: 500;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
   padding: 0.35rem 0.75rem;
   border-radius: 8px;
-  border: 1px solid #e2e8f0;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: default;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
 }
 
-/* Work Experience Styles */
-.company-info {
-  margin-bottom: 3rem;
-  text-align: center;
+.skills-category-card:hover .skill-badge {
+  border-color: rgba(99, 102, 241, 0.15);
 }
 
-.company-info h3 {
-  font-size: 1.8rem;
-  color: #2c3e50;
-  margin-bottom: 1rem;
+.skill-badge:hover {
+  background-color: var(--accent-light);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
-.company-description {
-  color: #555;
-  line-height: 1.6;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: justify;
-}
-
-.experience-timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.experience-timeline::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 100%;
-  background-color: #3498db;
-}
-
-.role-card {
-  position: relative;
-  margin-bottom: 3rem;
-  padding: 2rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.role-header::before {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-color: #3498db;
-  border-radius: 50%;
-}
-
-.role-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #3498db;
-}
-
-.role-header h4 {
-  font-size: 1.4rem;
-  color: #2c3e50;
-  margin-left: 20px;
-}
-
-.period {
-  color: #666;
-  font-weight: 500;
-}
-
-.achievements {
+.skills-detailed-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.achievements li {
-  margin-bottom: 1rem;
-  color: #444;
-  line-height: 1.6;
+.skills-detailed-list li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
   position: relative;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
 }
 
-.achievements li::before {
-  content: "→";
-  color: #3498db;
+.skills-detailed-list li::before {
+  content: '•';
   position: absolute;
   left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
 }
 
-/* Research Experience Styles */
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 2rem;
+/* RESEARCH SECTION */
+.research-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.research-card {
-  background-color: #f8f9fa;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+.research-item-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
 }
 
-.research-card:hover {
-  transform: translateY(-5px);
+.research-item-card:hover {
+  border-color: var(--accent-color);
+  background-color: var(--bg-primary);
 }
 
-.research-card h3 {
-  color: #2c3e50;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #3498db;
+.research-item-card h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
 }
 
-.research-card p {
-  color: #444;
+.research-item-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
   line-height: 1.6;
   text-align: justify;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .skills-page {
-    padding: 20px 10px;
-  }
-
-  .technical-skills,
-  .work-experience,
-  .research-experience {
-    padding: 1.5rem;
-  }
-
-  .technical-skills h2,
-  .work-experience h2,
-  .research-experience h2 {
-    font-size: 2rem;
-  }
-
-  .skills-grid {
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .experience-skills-layout {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 3.5rem;
   }
+}
 
-  .skill-category {
-    padding: 1rem;
-  }
-
-  .experience-timeline::before {
-    left: 0;
-  }
-
-  .role-card {
-    margin-left: 20px;
-  }
-
-  .role-header {
+@media (max-width: 640px) {
+  .role-timeline-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
-  }
-
-  .company-info h3 {
-    font-size: 1.5rem;
-  }
-
-  .research-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .research-card {
-    padding: 1.5rem;
-  }
-
-  .research-card h3 {
-    font-size: 1.3rem;
   }
 }

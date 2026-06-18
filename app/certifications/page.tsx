@@ -1,11 +1,11 @@
-import CertificationsContent from './CertificationsContent';
-import type { Metadata } from 'next';
+'use client';
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
-export const metadata: Metadata = {
-  title: 'Certifications & Achievements | Aditya::Portfolio',
-  description: 'Mathematics Olympiad certificates, online certifications from Coursera (Deep Learning, Machine Learning), and other achievements of Aditya Chakma.',
-};
-
-export default function CertificationsPage() {
-  return <CertificationsContent />;
+export default function RedirectPage() {
+    const router = useRouter();
+    useEffect(() => {
+        router.replace('/#certifications');
+    }, [router]);
+    return <div style={{ minHeight: '100vh', backgroundColor: '#ffffff' }} />;
 }

@@ -1,12 +1,33 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc; /* slate-50 */
+  --text-primary: #0f172a; /* slate-900 */
+  --text-secondary: #475569; /* slate-600 */
+  --accent-color: #6366f1; /* indigo-500 */
+  --accent-hover: #4f46e5; /* indigo-600 */
+  --accent-light: #eef2ff; /* indigo-50 */
+  --border-color: #e2e8f0; /* slate-200 */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  min-width: 300px !important;
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
 }
 
 .app {
@@ -17,6 +38,5 @@ body {
 
 .main-content {
   flex: 1;
-  margin-top: 60px; /* Height of header */
-  margin-bottom: 80px; /* Height of footer */
+  margin-top: 70px; /* Modernized header height */
 }
