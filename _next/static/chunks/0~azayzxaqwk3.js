@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,39012,e=>{"use strict";var t=e.i(43476),o=e.i(71645),i=e.i(18566);e.s(["default",0,function(){let e=(0,i.useRouter)();return(0,o.useEffect)(()=>{e.replace("/#projects")},[e]),(0,t.jsx)("div",{style:{minHeight:"100vh",backgroundColor:"#ffffff"}})}])}]);

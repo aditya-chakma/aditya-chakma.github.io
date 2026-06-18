@@ -1,11 +1,3 @@
-:HL["/_next/static/chunks/0s1nxdg288o~3.css","style"]
-:HL["/_next/static/chunks/0huex8z6uvt1t.css","style"]
-:HL["/_next/static/chunks/0in.2-q9x_61k.css","style"]
-:HL["/assets/icons/github.png","image"]
-:HL["/assets/icons/linked-in.png","image"]
-:HL["/assets/icons/kaggle.png","image"]
-:HL["/assets/icons/cv.png","image"]
-:HL["/assets/icons/toefl.png","image"]
-:HL["/assets/images/wh.gif","image"]
-:HL["/assets/images/Aditya.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"vMkagjNX6nRFUlZPOaAeP"}
+:HL["/_next/static/chunks/0sdn2bszzg.-0.css","style"]
+:HL["/_next/static/chunks/0jqyy53b2go7g.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"fqK65dODfLLY-v4AyQr-q"}
