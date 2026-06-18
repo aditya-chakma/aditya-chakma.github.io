@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
-import { onlineCertifications, bdmoImages, competitions, perfectAttendanceImage } from "../data/portfolioData";
+import { useEffect, useRef, useState } from "react";
+import { bdmoImages, competitions, onlineCertifications, perfectAttendanceImage } from "../data/portfolioData";
 
 export default function CertificationsSection({ onSelectImage }) {
     const [hasRendered, setHasRendered] = useState(false);
@@ -64,7 +64,7 @@ export default function CertificationsSection({ onSelectImage }) {
 
                         <h3 style={{ marginTop: '2.5rem' }}>BDMO (Bangladesh Mathematics Olympiad)</h3>
                         <p className="bdmo-intro-text">Selected and awarded certificates in BDMO state levels. Click thumbnails to inspect high-resolution credentials:</p>
-                        
+
                         <div className="bdmo-thumbnails-row">
                             {hasRendered ? (
                                 bdmoImages.map((image, idx) => (
@@ -82,9 +82,9 @@ export default function CertificationsSection({ onSelectImage }) {
                     </div>
 
                     <div className="perfect-att-col">
-                        <h3>Perfect Attendance Recognition</h3>
-                        <p className="perfect-att-text">Awarded Therap Services LLC Certificate for perfect commitment and zero missing logs during consecutive evaluation cycles.</p>
-                        
+                        <h3>Perfect Attendance Certificate</h3>
+                        <p className="perfect-att-text">Awarded Perfect Attendance Certificate at Notre Dame College, Dhaka.</p>
+
                         {hasRendered ? (
                             <div className="attendance-thumb-card" onClick={() => onSelectImage(perfectAttendanceImage)}>
                                 <img src={perfectAttendanceImage} alt="Perfect Attendance" loading="lazy" />
@@ -99,7 +99,7 @@ export default function CertificationsSection({ onSelectImage }) {
                 {/* Online Certifications */}
                 <h3 className="section-sub-header" style={{ marginTop: '4rem' }}>Professional & Deep Learning Credentials</h3>
                 <p className="cert-intro-text">Interactive certification list with image validations. Click any card to preview the full verified credential:</p>
-                
+
                 <div className="certifications-matrix-grid">
                     {hasRendered ? (
                         onlineCertifications.map((cert, index) => (

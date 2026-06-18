@@ -133,7 +133,7 @@ export const technicalSkills: SkillCategory[] = [
 // 2. Work Experience Data
 export const workExperience: WorkExperience = {
     company: "Therap Services LLC",
-    description: `5+ years of Software Engineering experience, specialized in developing and managing complex enterprise systems. Led core projects, delivering high-quality, high-throughput systems. Strong expertise in code review, cross-team collaboration, mentoring, and automation in an agile environment using Scrum practices. Focused on building highly secure, reliable, scalable, and robust systems compliant with strict US federal guidelines.`,
+    description: `Around 5.5 years of Software Engineering experience, specialized in developing and managing complex enterprise systems. Led core projects, delivering high-quality, high-throughput systems. Strong expertise in code review, cross-team collaboration, mentoring, and automation in an agile environment using Scrum practices. Focused on building highly secure, reliable, scalable, and robust systems compliant with strict US federal guidelines.`,
     roles: [
         {
             title: "Sr. Software Engineer",
@@ -148,7 +148,7 @@ export const workExperience: WorkExperience = {
             title: "Software Engineer II",
             period: "April 2024 - March 2026",
             achievements: [
-                "Worked in a team of 50+ members to maintain core system functionalities, including login, **EVV (Electronic Visit Validation)**, Scheduling (Google Calendar-like), and Secure Messaging (Gmail-like secure feature).",
+                "Worked in a team of 10+ members to maintain core system functionalities, including login, **EVV (Electronic Visit Validation)**, Scheduling (Google Calendar-like), and Secure Messaging (Gmail-like secure feature).",
                 "Architected and developed **Webhooks** for Therap's aggregator application, enabling efficient system-to-system communication and data integration.",
                 "Re-engineered high-volume cron jobs and data access patterns using Oracle Coherence, advanced query optimization, and intelligent indexing, reducing database QPS and achieving a **20% reduction in latency**.",
                 "Load-tested API endpoints with Gatling and JMeter, identifying bottlenecks in the legacy UUID generator, and replaced it with **Twitter Snowflake UUID**, achieving **5x insert/update operations per second**.",
@@ -209,8 +209,8 @@ export const personalProjects: Project[] = [
         liveUrl: "https://www.beiong.com",
         description: `Beiong is a modern, client-facing e-commerce platform designed for global scalability. It is built using a highly scalable microservices architecture on the backend and a mobile-first, TanStack Query-powered Next.js interface on the frontend. The project utilizes containerization and advanced AWS services for secure, high-performance commerce management.`,
         techStack: [
-            "Java 21", "Spring Boot", "Spring Cloud", "Hibernate", "PostgreSQL", "AWS RDS", 
-            "CloudFront", "CloudWatch", "AWS SNS", "S3", "AWS Lambda", "Spring Security", 
+            "Java 21", "Spring Boot", "Spring Cloud", "Hibernate", "PostgreSQL", "AWS RDS",
+            "CloudFront", "CloudWatch", "AWS SNS", "S3", "AWS Lambda", "Spring Security",
             "Docker", "Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI", "Kafka", "Zod", "TanStack Query"
         ],
         features: [
@@ -316,7 +316,7 @@ export const education: EducationDetail[] = [
         period: "July 2021 - 2023",
         cgpa: "3.75/4.00",
         courses: [
-            "Computer Security", "Neural Networks", "Advanced Digital Image Processing", 
+            "Computer Security", "Neural Networks", "Advanced Digital Image Processing",
             "Programming Languages and Systems", "Bioinformatics", "Wireless Ad-hoc Networks"
         ],
         thesis: {
@@ -330,8 +330,8 @@ export const education: EducationDetail[] = [
         period: "February 2016 - February 2021",
         cgpa: "3.30/4.00",
         courses: [
-            "Pattern Recognition", "Artificial Intelligence", "Fault Tolerant Systems", 
-            "High Performance Database", "Data Structure and Algorithms I", "Data Structure and Algorithms II", 
+            "Pattern Recognition", "Artificial Intelligence", "Fault Tolerant Systems",
+            "High Performance Database", "Data Structure and Algorithms I", "Data Structure and Algorithms II",
             "Concrete Mathematics", "Discrete Mathematics", "Software Engineering", "Database"
         ],
         thesis: {

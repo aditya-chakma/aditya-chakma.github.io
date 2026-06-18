@@ -9,17 +9,17 @@ export default function HeroSection() {
                     <h1>
                         Hi, I am Aditya <img src="/assets/images/wh.gif" alt="Wave" className="wave-hand" />
                     </h1>
-                    <h2 className="hero-subtitle">Senior Full-Stack & Systems Engineer</h2>
+                    <h2 className="hero-subtitle">Senior Software Engineer</h2>
                     <div className="introduction-text">
                         <p>
-                            I am a <strong>Full-Stack Software Engineer</strong> with over <strong>5+ years of professional experience</strong> specializing in high-throughput backend systems, modern DevOps practices, and autonomous agentic AI workflows.
+                            I am a <strong>Full-Stack Software Engineer</strong> (expertise in backend) with over <strong> around 5.5 years of professional experience</strong> specializing in high-throughput backend systems, modern DevOps practices, and autonomous agentic AI workflows.
                         </p>
                         <p>
-                            At Therap Services, I design and scale systems serving over <strong>1,000,000+ users</strong>, leading critical infrastructural upgrades (ActiveMQ to Kafka, JDK 8 to 21) and building secure, enterprise-grade AI automation pipelines.
+                            I design and scale systems serving over <strong>1,000,000+ users</strong>, leading critical infrastructural upgrades (Kafka, JDK, and Spring migration) and building secure, enterprise-grade AI automation pipelines.
                         </p>
                     </div>
                     <ContactBar />
-                    
+
                     {/* HERO SPOTLIGHT CARD */}
                     <div className="hero-spotlight-card">
                         <div className="spotlight-tag">

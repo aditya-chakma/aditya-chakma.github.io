@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function ContactSection() {
     const [formData, setFormData] = useState({
@@ -29,7 +29,7 @@ export default function ContactSection() {
             <div className="section-container">
                 <h2 className="section-title">Get in Touch</h2>
                 <p className="contact-subtitle">Have a project, job opening, or opportunity? Drop a secure message directly using the mailto: constructor below.</p>
-                
+
                 <div className="contact-form-layout">
                     <form onSubmit={handleFormSubmit} className="interactive-email-form">
                         <div className="form-row-group">

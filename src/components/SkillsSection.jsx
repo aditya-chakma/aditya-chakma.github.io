@@ -1,5 +1,4 @@
-import React from "react";
-import { technicalSkills, workExperience, researchProjects } from "../data/portfolioData";
+import { researchProjects, technicalSkills, workExperience } from "../data/portfolioData";
 
 export default function SkillsSection() {
     // Helper to render bolded text in achievements list
@@ -17,12 +16,12 @@ export default function SkillsSection() {
         <section id="experience" className="section-experience">
             <div className="section-container">
                 <h2 className="section-title">Skills & Experience</h2>
-                
+
                 <div className="experience-skills-layout">
                     {/* Work Experience Column */}
                     <div className="experience-column">
                         <h3 className="sub-section-title">Professional Experience</h3>
-                        
+
                         <div className="company-info-card">
                             <h4 className="company-name">{workExperience.company}</h4>
                             <p className="company-summary">{workExperience.description}</p>
@@ -49,7 +48,7 @@ export default function SkillsSection() {
                     {/* Technical Skills Column */}
                     <div className="skills-column">
                         <h3 className="sub-section-title">Technical Expertise</h3>
-                        
+
                         <div className="skills-bento-grid">
                             {technicalSkills.map((categoryData, index) => (
                                 <div key={index} className="skills-category-card">

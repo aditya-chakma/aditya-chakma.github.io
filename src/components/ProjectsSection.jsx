@@ -1,5 +1,4 @@
-import React from "react";
-import { personalProjects, academicProjects } from "../data/portfolioData";
+import { academicProjects, personalProjects } from "../data/portfolioData";
 
 export default function ProjectsSection() {
     return (
@@ -70,7 +69,7 @@ export default function ProjectsSection() {
                                 <span className="project-item-type">Featured Full-Stack</span>
                             </div>
                             <p className="project-item-desc">{project.description}</p>
-                            
+
                             <div className="project-item-tech">
                                 <h5>Technologies</h5>
                                 <div className="tech-badge-row">
@@ -114,7 +113,7 @@ export default function ProjectsSection() {
                                 <span className="project-item-type">Academic System</span>
                             </div>
                             <p className="project-item-desc">{project.description}</p>
-                            
+
                             <div className="project-item-tech">
                                 <div className="tech-badge-row">
                                     {project.techStack.map((tech, tIdx) => (

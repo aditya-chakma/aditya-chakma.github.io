@@ -1,4 +1,3 @@
-import React from "react";
 import { education } from "../data/portfolioData";
 
 export default function EducationSection() {
@@ -15,7 +14,7 @@ export default function EducationSection() {
                             </div>
                             <p className="edu-institution">{edu.institution}</p>
                             {edu.cgpa && <div className="edu-cgpa">CGPA: <strong>{edu.cgpa}</strong></div>}
-                            
+
                             {edu.courses && (
                                 <div className="edu-courses">
                                     <h5>Key Focus Courses</h5>
