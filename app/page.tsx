@@ -52,6 +52,7 @@ export default function Home() {
                 "Spring Boot",
                 "Spring Cloud",
                 "Spring Security",
+                "Java EE",
                 "Next.js",
                 "React.js",
                 "Tailwind CSS",
@@ -59,6 +60,7 @@ export default function Home() {
                 "Zod",
                 "TanStack Query",
                 "REST API",
+                "SOAP",
                 "gRPC",
                 "Protobuf",
                 "Hibernate"
@@ -85,7 +87,7 @@ export default function Home() {
         },
         {
             category: "Data Streaming & Middleware",
-            skills: ["Apache Kafka", "JMS", "Webhooks"],
+            skills: ["Apache Kafka", "JMS"],
             isTagCloud: true,
         },
         {
@@ -149,7 +151,8 @@ export default function Home() {
                     "Contributed to implementing an in-house authentication module, RBAC, and ABAC using **Spring Security** featuring **MFA, OAuth2, JWT**, and rate-limiting, reducing operational licensing costs to zero.",
                     "Delivered state-specific HIPAA-compliant solutions for Kentucky and Tennessee, implementing rollup-dashboards and meeting the federal **21st Century Cures Act** mandate, securing multi-million dollar state contracts.",
                     "Developed data-feed dashboards processing over **1 million records per day** using **Spring Batch, JDBC, and Redis** with asynchronous multithreading for real-time monitoring.",
-                    "Redesigned third-party API endpoints, reducing API calls overhead by **50%** and supporting cross-platform development."
+                    "Architected and developed high-performant **data integration pipeline** with multiple Giant health care providers like **HHA, RHA, Sandata**, and **Federal States (TN, KY)** leveraging REST APIs, and adhering to **OAS 3.0**.",
+                    "Involved in Developer and QA-side **On-premise server deployments** using **WebLogic, Tomcat, Nginx Proxies and Reverse Proxies**, and **Kafka Zookeeper** ensuring high performance and stability."
                 ],
             },
             {
@@ -157,7 +160,8 @@ export default function Home() {
                 period: "March 2021 - March 2022",
                 achievements: [
                     "Developed and maintained a large-scale customer-facing B2B SaaS application with **40,000+ Daily CCU** (Concurrent Users) serving over **1,000,000+ individuals**.",
-                    "Optimized on-demand loading of resources and integrated CDNs, reducing network bandwidth by **20%** and improving page load times."
+                    "Optimized on-demand loading of resources and integrated CDNs, reducing network bandwidth by **20%** and improving page load times.",
+                    "Developed an in-house **message translation tracker** for localization of the application, fully eliminating **manual intervention**."
                 ],
             }
         ],
