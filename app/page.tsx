@@ -391,6 +391,32 @@ export default function Home() {
                             </p>
                         </div>
                         <ContactBar />
+                        
+                        {/* HERO SPOTLIGHT CARD */}
+                        <div className="hero-spotlight-card">
+                            <div className="spotlight-tag">
+                                <span className="spotlight-fire">🔥</span> Featured System Spotlight
+                            </div>
+                            <h3>Beiong E-Commerce</h3>
+                            <p>
+                                Looking for my latest work? Explore <strong>Beiong</strong>, a modern, client-facing e-commerce platform built with <strong>Java 21, Spring Cloud, AWS, and Next.js</strong>.
+                            </p>
+                            <div className="spotlight-actions">
+                                <a href="https://www.beiong.com" target="_blank" rel="noopener noreferrer" className="spotlight-btn-live">
+                                    Visit Live Site 🌐
+                                </a>
+                                <a href="#projects" className="spotlight-btn-details" onClick={(e) => {
+                                    e.preventDefault();
+                                    const el = document.getElementById('projects');
+                                    if (el) {
+                                        el.scrollIntoView({ behavior: 'smooth' });
+                                        window.history.pushState(null, '', '/#projects');
+                                    }
+                                }}>
+                                    See Architectural Details ⬇️
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="hero-image-side">
@@ -484,7 +510,7 @@ export default function Home() {
                         <div className="callout-header">
                             <span className="callout-icon">🤖</span>
                             <div>
-                                <h3>AI-Assisted Coding & Agentic SDLC Automation</h3>
+                                <h3>Agentic Coding and Agentic SDLC Automation</h3>
                                 <p>Pioneering context-aware multi-agent development pipelines in professional software workflows.</p>
                             </div>
                         </div>
@@ -518,6 +544,15 @@ export default function Home() {
                                 <ul className="bullet-accent-list">
                                     <li><strong>Verification Gates:</strong> Pause execution after plan/design phases</li>
                                     <li><strong>Dry-Checks:</strong> Automated checklist verification across DRY compliance</li>
+                                </ul>
+                            </div>
+                            <div className="ai-agentic-card">
+                                <span className="ai-card-tag">Production Systems</span>
+                                <h4>Enterprise RAG & Tool-Calling</h4>
+                                <p>Designed and deployed secure, production-grade agentic architectures with advanced capabilities:</p>
+                                <ul className="bullet-accent-list">
+                                    <li><strong>End-to-End RAG Pipelines:</strong> Engineered semantic search using Python, LangChain, and <strong>Vector Databases</strong> over a 10,000+ document enterprise repository.</li>
+                                    <li><strong>Autonomous Tool-Calling:</strong> Built specialized Agents equipped with custom APIs, executing dynamic real-time permission and access-control checks.</li>
                                 </ul>
                             </div>
                         </div>
@@ -555,7 +590,7 @@ export default function Home() {
                                 <div className="project-actions">
                                     {project.github ? (
                                         <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-github">
-                                            View Source
+                                            <img src="/assets/icons/github.png" alt="GitHub" /> View on GitHub
                                         </a>
                                     ) : (
                                         <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn-live">
@@ -588,7 +623,7 @@ export default function Home() {
 
                                 <div className="project-actions">
                                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-github">
-                                        View Source
+                                        <img src="/assets/icons/github.png" alt="GitHub" /> View on GitHub
                                     </a>
                                 </div>
                             </div>

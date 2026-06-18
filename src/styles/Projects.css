@@ -305,6 +305,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   width: 100%;
   padding: 0.65rem 1.25rem;
   font-size: 0.9rem;
@@ -321,11 +322,22 @@
   color: var(--text-primary);
 }
 
+.btn-github img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  transition: filter 0.2s ease;
+}
+
 .btn-github:hover {
   background-color: #0f172a;
   color: white;
   border-color: #0f172a;
   box-shadow: var(--shadow-md);
+}
+
+.btn-github:hover img {
+  filter: brightness(0) invert(1);
 }
 
 .btn-live {
