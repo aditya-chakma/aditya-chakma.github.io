@@ -1,0 +1,71 @@
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-hover) 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 99;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) scale(0.8);
+  pointer-events: none;
+  transition: 
+    opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+/* Micro-animations and hover effects */
+.back-to-top .chevron-icon {
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px) scale(1.06);
+  box-shadow: 0 8px 22px rgba(99, 102, 241, 0.6);
+  background: linear-gradient(135deg, var(--accent-hover) 0%, #4338ca 100%);
+}
+
+.back-to-top:hover .chevron-icon {
+  transform: translateY(-2px);
+}
+
+/* Active press state */
+.back-to-top:active {
+  transform: translateY(-2px) scale(0.98);
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.4);
+}
+
+/* Keyboard accessibility */
+.back-to-top:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--bg-primary), 0 0 0 6px var(--accent-color);
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 42px;
+    height: 42px;
+  }
+}

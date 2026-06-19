@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/src/components/Header';
 import Footer from '@/src/components/Footer';
+import BackToTop from '@/src/components/BackToTop';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://aditya-chakma.github.io'),
@@ -21,6 +22,7 @@ export default function RootLayout({
           <Header />
           <main className="main-content">{children}</main>
           <Footer />
+          <BackToTop />
         </div>
       </body>
     </html>

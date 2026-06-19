@@ -19,13 +19,13 @@ import "@/src/styles/Home.css";
 import "@/src/styles/Projects.css";
 import "@/src/styles/Skills.css";
 
-export default function HomeContent() {
+export default function HomeContent({ images }: { images: string[] }) {
     // State for Certifications Image Modal
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     return (
         <div className="portfolio-single-page">
-            <HeroSection />
+            <HeroSection images={images} />
             <SkillsSection />
             <ProjectsSection />
             <EducationSection />

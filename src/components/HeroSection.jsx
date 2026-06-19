@@ -1,7 +1,58 @@
-import React from "react";
+"use client";
+
+import { useEffect, useState } from "react";
 import ContactBar from "./ContactBar";
 
-export default function HeroSection() {
+export default function HeroSection({ images = ['/assets/images/dp/Aditya_1.jpg'] }) {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [nextIndex, setNextIndex] = useState(null);
+    const [isAnimating, setIsAnimating] = useState(false);
+
+    const currentSrc = images[currentIndex];
+    const nextSrc = nextIndex !== null ? images[nextIndex] : null;
+
+    // Background preloader to ensure smooth caching of the next slide
+    useEffect(() => {
+        if (images.length > 1) {
+            const nextIdx = (currentIndex + 1) % images.length;
+            const img = new Image();
+            img.src = images[nextIdx];
+        }
+    }, [currentIndex, images]);
+
+    useEffect(() => {
+        if (images.length <= 1) return;
+
+        let active = true;
+        let transitionTimeout;
+        let slideTimeout;
+
+        const runSlider = (currIdx) => {
+            const nextIdx = (currIdx + 1) % images.length;
+
+            setNextIndex(nextIdx);
+            setIsAnimating(true);
+
+            transitionTimeout = setTimeout(() => {
+                if (!active) return;
+                setCurrentIndex(nextIdx);
+                setNextIndex(null);
+                setIsAnimating(false);
+
+                // Schedule next slide 2s after animation finishes
+                slideTimeout = setTimeout(() => runSlider(nextIdx), 2000);
+            }, 600);
+        };
+
+        slideTimeout = setTimeout(() => runSlider(0), 2000);
+
+        return () => {
+            active = false;
+            clearTimeout(slideTimeout);
+            clearTimeout(transitionTimeout);
+        };
+    }, [images]);
+
     return (
         <section id="home" className="section-hero">
             <div className="hero-container">
@@ -49,7 +100,20 @@ export default function HeroSection() {
 
                 <div className="hero-image-side">
                     <div className="avatar-frame">
-                        <img src="/assets/images/Aditya.jpg" alt="Aditya Chakma" className="avatar-img" />
+                        <div className="avatar-slider">
+                            <img 
+                                src={currentSrc} 
+                                alt="Aditya Chakma" 
+                                className={`avatar-img ${isAnimating ? 'slide-out' : ''}`} 
+                            />
+                            {nextSrc && (
+                                <img 
+                                    src={nextSrc} 
+                                    alt="Aditya Chakma" 
+                                    className="avatar-img slide-in" 
+                                />
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>
