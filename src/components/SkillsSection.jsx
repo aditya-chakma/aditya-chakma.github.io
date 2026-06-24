@@ -90,7 +90,10 @@ export default function SkillsSection() {
                 <div className="github-stats-fullwidth">
                     <h3 className="sub-section-title" style={{ marginTop: '3.5rem' }}>GitHub Stats</h3>
                     <div className="github-calendar">
-                        <GitHubCalendar username="aditya-chakma" />
+                        <GitHubCalendar 
+                            username="aditya-chakma" 
+                            colorScheme="light"
+                        />
                     </div>
                 </div>
 
