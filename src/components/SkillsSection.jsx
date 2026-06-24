@@ -1,4 +1,10 @@
+import dynamic from 'next/dynamic';
 import { researchProjects, technicalSkills, workExperience } from "../data/portfolioData";
+
+const GitHubCalendar = dynamic(
+    () => import('react-github-calendar').then((mod) => mod.GitHubCalendar),
+    { ssr: false }
+);
 
 export default function SkillsSection() {
     // Helper to render bolded text in achievements list
@@ -79,6 +85,15 @@ export default function SkillsSection() {
                         </div>
                     </div>
                 </div>
+
+                {/* GitHub Stats Section - Full Width */}
+                <div className="github-stats-fullwidth">
+                    <h3 className="sub-section-title" style={{ marginTop: '3.5rem' }}>GitHub Stats</h3>
+                    <div className="github-calendar">
+                        <GitHubCalendar username="aditya-chakma" />
+                    </div>
+                </div>
+
 
                 {/* Research Projects Section - Now Full Width Below */}
                 <div className="research-section-fullwidth">
