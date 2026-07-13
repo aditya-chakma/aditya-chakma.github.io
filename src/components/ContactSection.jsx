@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PhoneIcon, WhatsAppIcon, MailIcon } from "./Icons";
+import { PhoneIcon, WhatsAppIcon, MailIcon, GithubIcon, LinkedinIcon } from "./Icons";
 
 export default function ContactSection() {
     const [formData, setFormData] = useState({
@@ -65,6 +65,26 @@ export default function ContactSection() {
                                 <div className="contact-detail-content">
                                     <span className="contact-detail-label">Email</span>
                                     <a href="mailto:adityachakma199@gmail.com" className="contact-detail-value">adityachakma199@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div className="contact-detail-item">
+                                <div className="contact-detail-icon" aria-hidden="true">
+                                    <GithubIcon size={24} />
+                                </div>
+                                <div className="contact-detail-content">
+                                    <span className="contact-detail-label">GitHub</span>
+                                    <a href="https://github.com/aditya-chakma" target="_blank" rel="noopener noreferrer" className="contact-detail-value">github.com/aditya-chakma</a>
+                                </div>
+                            </div>
+
+                            <div className="contact-detail-item">
+                                <div className="contact-detail-icon" aria-hidden="true">
+                                    <LinkedinIcon size={24} />
+                                </div>
+                                <div className="contact-detail-content">
+                                    <span className="contact-detail-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/aditya-chakma/" target="_blank" rel="noopener noreferrer" className="contact-detail-value">linkedin.com/in/aditya-chakma</a>
                                 </div>
                             </div>
                         </div>

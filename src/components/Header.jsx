@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { HomeIcon, BriefcaseIcon, CodeIcon, GraduationCapIcon, AwardIcon, MessageSquareIcon } from './Icons';
 import './Header.css';
 
 const Header = () => {
@@ -98,32 +99,38 @@ const Header = () => {
         <ul className={`nav-list ${isMenuOpen ? 'active' : ''}`}>
           <li>
             <Link href="/#home" className={isActive('home') ? 'active' : ''} onClick={(e) => handleLinkClick(e, 'home')}>
-              Home
+              <HomeIcon size={16} className="nav-icon" />
+              <span>Home</span>
             </Link>
           </li>
           <li>
             <Link href="/#experience" className={isActive('experience') ? 'active' : ''} onClick={(e) => handleLinkClick(e, 'experience')}>
-              Skills & Experience
+              <BriefcaseIcon size={16} className="nav-icon" />
+              <span>Skills & Experience</span>
             </Link>
           </li>
           <li>
             <Link href="/#projects" className={isActive('projects') ? 'active' : ''} onClick={(e) => handleLinkClick(e, 'projects')}>
-              Projects
+              <CodeIcon size={16} className="nav-icon" />
+              <span>Projects</span>
             </Link>
           </li>
           <li>
             <Link href="/#education" className={isActive('education') ? 'active' : ''} onClick={(e) => handleLinkClick(e, 'education')}>
-              Education
+              <GraduationCapIcon size={16} className="nav-icon" />
+              <span>Education</span>
             </Link>
           </li>
           <li>
             <Link href="/#certifications" className={isActive('certifications') ? 'active' : ''} onClick={(e) => handleLinkClick(e, 'certifications')}>
-              Certifications
+              <AwardIcon size={16} className="nav-icon" />
+              <span>Certifications</span>
             </Link>
           </li>
           <li>
             <Link href="/#contact" className={isActive('contact') ? 'active' : ''} onClick={(e) => handleLinkClick(e, 'contact')}>
-              Contact
+              <MessageSquareIcon size={16} className="nav-icon" />
+              <span>Contact</span>
             </Link>
           </li>
         </ul>
