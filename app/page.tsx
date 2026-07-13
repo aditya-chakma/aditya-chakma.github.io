@@ -6,6 +6,9 @@ import HomeContent from './HomeContent';
 export const metadata: Metadata = {
   title: 'Aditya Chakma | Senior Full-Stack & Systems Engineer',
   description: 'Personal portfolio of Aditya Chakma, Senior Full-Stack Software Engineer with 5+ years of experience specializing in high-throughput backend architectures, DevOps, and autonomous agentic AI SDLC systems.',
+  icons: {
+    icon: '/favicon-13072026.ico',
+  },
   openGraph: {
     title: 'Aditya Chakma | Senior Full-Stack & Systems Engineer',
     description: 'Senior Full-Stack Software Engineer with 5+ years of professional experience building scalable systems, high-throughput microservices, and autonomous agentic AI workflows.',

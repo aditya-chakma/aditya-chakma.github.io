@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://aditya-chakma.github.io'),
   title: 'Portfolio',
   description: 'Personal portfolio of Aditya Chakma',
+  icons: {
+    icon: '/favicon-13072026.ico',
+  },
 };
 
 export default function RootLayout({
