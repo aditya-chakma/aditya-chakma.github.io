@@ -14,7 +14,7 @@
 }
 
 .contact-form-layout {
-  max-width: 800px;
+  max-width: 960px;
   width: 100%;
   margin: 0 auto;
   background-color: var(--bg-primary);
@@ -22,6 +22,96 @@
   padding: 3rem;
   border-radius: 16px;
   box-shadow: var(--shadow-md);
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+}
+
+.contact-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-info-title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.contact-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-detail-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: var(--accent-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.contact-detail-item:hover .contact-detail-icon {
+  background-color: var(--accent-color);
+  color: white;
+  transform: scale(1.05);
+}
+
+.contact-detail-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.contact-detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-detail-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.contact-detail-value {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-detail-value:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.contact-form-column {
+  width: 100%;
 }
 
 .interactive-email-form {
@@ -104,7 +194,9 @@
 
 @media (max-width: 768px) {
   .contact-form-layout {
-    padding: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 2rem 1.5rem;
   }
   
   .form-row-group {
